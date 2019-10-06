@@ -1,0 +1,56 @@
+{{#section appuntamenti}}
+                            <div class="
+                                mdc-card
+                                workspace-card
+                                workspace-card--vertical
+                                ">
+                                <div class="mdc-card__primary-action">
+                                    <div class="mdc-card__media">
+                                        <img src="{{copertina type=image width=750 height=375 tag=false}}"
+                                            class="workspace-image" />
+                                    </div>
+                                    <div class="mdc-card__content">
+                                        <a class="pseudo-link" href="{{_permalink}}"
+                                            data-track-name="workspace-card-click">
+                                            <h2 class="heading">
+                                                {{title}}
+                                            </h2>
+                                        </a>
+                                        <div class="price-widget ">
+                                            <div class="price-block">
+                                                <strong class="price">
+                                                    <span class="pb-money" data-value="{{date type=date}}"
+                                                        data-currency="ETH">
+                                                        {{date type=date time=true format="%d-%m-%Y HH:mm" }}
+                                                    </span>
+                                                </strong>
+                                                <!-- <strong class="price-approx">
+                                                    ≈€7.59
+                                                </strong> -->
+                                            </div>
+                                            <label class="label">
+                                                <span>
+                                                    {{summary type=html}}
+                                                </span>
+                                                <div class="hint" data-currency="EUR">
+                                                    <div class="hint-inner">
+                                                        <svg class="pb-icon">
+                                                            <use xlink:href="#icon-md__help_outline__filled"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{dove_pazio label="Dove - nome dello spazio" required=false}}
+                                {{dove_indirizzo label="Dove - indirizzo" required=false}}
+                                {{dove_come label="Dove - come raggiungere il posto" required=false}}
+                                <div class="mdc-card__actions">
+                                    <a href="{{_permalink}}" class="mdc-button mdc-button--raised"
+                                        data-track-name="workspace-card-book-button-click">
+                                        {{button}}
+                                    </a>
+                                </div>
+                            </div>
+                            {{/section}}

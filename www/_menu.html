@@ -1,0 +1,80 @@
+<aside class="mdc-dialog main-menu-dialog fullscreen">
+        <div class="mdc-dialog__surface">
+            <div class="mdc-dialog__header">
+                <div class="main-nav-header-content">
+                    <div class="pb-logo">
+                        <a href="index.html">
+                            <!-- <img src="https://corpoeticadotblog.files.wordpress.com/2018/11/cropped-corpoetica-logo3-e1543246501588.png?w=32" class="logo-img" /> -->
+                            <img class="logo-img-menu" src="https://corpoeticadotblog.files.wordpress.com/2018/11/corpoetica-logo2.png?w=192"  />
+                            <!-- <span class="titolone-alto">Corpoetica</span> -->
+                        </a>
+                    </div>
+                    <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                        <svg class="pb-icon">
+                            <use xlink:href="#icon-md__close__filled"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="mdc-dialog__body">
+                <div class="pb-main-nav style__default">
+                    <!-- <div class="
+                    item
+                    type-group
+                    id__workspaces
+                    ">
+                        <div class="item-holder" data-track-name="workspaces-link-click"
+                            data-track-context="main-menu">
+                            <span class="item-text">
+                                Workspaces
+                            </span>
+                            <svg class="icon-up pb-icon">
+                                <use xlink:href="#icon-md__keyboard_arrow_up"></use>
+                            </svg>
+                            <svg class="icon-down pb-icon">
+                                <use xlink:href="#icon-md__keyboard_arrow_down"></use>
+                            </svg>
+                        </div>
+                        <div class="nested-items-list">
+                            <div class="nested-item-holder">
+                                <a href="workspaces/amsterdam/index.html" class="nested-item "
+                                    data-track-name="workspace-link-click" data-track-context="main-menu">
+                                    Amsterdam
+                                </a>
+                            </div>
+                            <div class="nested-item-holder">
+                                <a href="workspaces/berlin/index.html" class="nested-item "
+                                    data-track-name="workspace-link-click" data-track-context="main-menu">
+                                    Berlin
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                    {{#section navs sortable=true label="Menu"}}
+                    <div class="
+                    item
+                    type-single
+                    id__how_it_works
+                    ">
+                        <a class="item-holder" href="{{url type=link label='URL della pagina'}}"
+                            data-track-name="{{_permalink}}-link-click" data-track-context="main-menu">
+                            <span class="item-text">
+                                {{linkText label='Testo del link'}}
+                            </span>
+                        </a>
+                    </div>
+                    {{/section}}
+                    
+                    <div class="auth-buttons">
+                        <button class="sign-in-button mdc-button">
+                            <!-- Log in -->
+                        </button> 
+                        <button class="sign-up-button mdc-button mdc-button--outlined">
+                            Iscriviti
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mdc-dialog__backdrop"></div>
+    </aside>

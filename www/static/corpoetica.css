@@ -1,0 +1,26 @@
+span.titolone-alto {
+    padding-left: 7px;
+    left:19px;
+    position: absolute;
+    top: -2px;
+}
+.pb-header .pb-logo {
+    position: relative;
+}
+.logo-img-menu {
+    height: 45px;
+    top: -9px;
+    position: relative;
+}
+.action_home .testomonial-card .single-card {
+    position: relative;
+    height: 7rem;
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+.links-bunch:not(:first-child) {
+    margin-left: 10px;
+}
+.press-highlights-stripe .inner span:last-child {
+    display: none;
+}

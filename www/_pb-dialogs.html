@@ -1,0 +1,1080 @@
+            <div class="pb-dialogs">
+                <div class="mdc-dialog pb-auth-dialog fullscreen">
+                    <div class="mdc-dialog__surface">
+                        <div class="pb-auth-view view_sign-in">
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Log in
+                                </h2>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                <form action="https://primalbase.com/api/auth/login/" class="auth-sign-in-form"
+                                    novalidate="novalidate">
+                                    <div class="field__username mdc-text-field mdc-text-field--box">
+                                        <input type="email" name="email" required="required" class="mdc-text-field__input"
+                                            aria-controls="sign-in-username-helper-text" />
+                                        <label class="mdc-floating-label">
+                                            Email address
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <p id="sign-in-username-helper-text"
+                                        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                        Please enter a valid email address
+                                    </p>
+                                    <div class="
+        field__password
+        mdc-text-field
+        mdc-text-field--box
+        ">
+                                        <input type="password" name="password" required="required"
+                                            class="mdc-text-field__input" aria-controls="sign-in-password-helper-text"
+                                            autocomplete="new-password" />
+                                        <label class="mdc-floating-label">
+                                            Password
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <span class="password-reset-button">
+                                        Forgot password?
+                                    </span>
+                                    <input type="submit" />
+                                </form>
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button class="
+        auth-secondary-button
+        mdc-button
+        mdc-dialog__footer__button
+        ">
+                                    Sign up
+                                </button>
+                                <button tabindex="0" class="
+        auth-primary-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                    Log in
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pb-auth-view view_sign-up">
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Iscriviti alla newsletter
+                                </h2>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                <form action="https://primalbase.com/api/auth/users/" class="auth-sign-up-form"
+                                    novalidate="novalidate">
+                                    <div class="field__username mdc-text-field mdc-text-field--box">
+                                        <input type="email" name="email" required="required" class="mdc-text-field__input"
+                                            tabindex="1" aria-controls="sign-up-username-helper-text" />
+                                        <label class="mdc-floating-label">
+                                            Email address
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <p id="sign-up-username-helper-text"
+                                        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                        Inserisci un indirizzo email valido, grazie!
+                                    </p>
+                                    <div class="first-last-name-fieldset">
+                                        <div class="first-name-holder">
+                                            <div class="field__first-name mdc-text-field mdc-text-field--box">
+                                                <input name="first_name" required="required" class="mdc-text-field__input"
+                                                    aria-controls="sign-up-first-name-helper-text" />
+                                                <label class="mdc-floating-label">
+                                                    Nome
+                                                </label>
+                                                <div class="mdc-line-ripple"></div>
+                                            </div>
+                                            <p id="sign-up-first-name-helper-text"
+                                                class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                                Ci piacerebbe sapere come ti chiami
+                                            </p>
+                                        </div>
+                                        <div class="last-name-holder">
+                                            <div class="field__last-name mdc-text-field mdc-text-field--box">
+                                                <input name="last_name" required="required" class="mdc-text-field__input"
+                                                    aria-controls="sign-up-last-name-helper-text" />
+                                                <label class="mdc-floating-label">
+                                                    Cognome
+                                                </label>
+                                                <div class="mdc-line-ripple"></div>
+                                            </div>
+                                            <p id="sign-up-last-name-helper-text"
+                                                class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                                Scrivi anche il tuo cognome, così sappiamo chi sei
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- inizio sezione da rimuovere o tradurre -->
+                                    <div class="
+        field__password
+        mdc-text-field
+        mdc-text-field--box
+        mdc-text-field--with-trailing-icon
+        ">
+                                        <input type="password" name="password" required="required" pattern=".{10,}"
+                                            class="mdc-text-field__input" aria-controls="sign-up-password-helper-text"
+                                            autocomplete="new-password" />
+                                        <label class="mdc-floating-label">
+                                            Password
+                                        </label>
+                                        <div class="mdc-text-field__icon toggle-password-container">
+                                            <button type="button" class="mdc-icon-button show-password">
+                                                <svg class="pb-icon">
+                                                    <use xlink:href="#icon-md__remove_red_eye__filled"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="mdc-icon-button hide-password"
+                                                style="display: none">
+                                                <svg class="pb-icon">
+                                                    <use xlink:href="#icon-md__visibility_off__filled"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <p id="sign-up-password-helper-text"
+                                        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                        Password should be at least 10 symbols long
+                                    </p>
+                                    <!-- fine sezione da rimuovere o tradurre -->
+                                    <div class="field__terms mdc-form-field">
+                                        <div class="agreement-checkbox mdc-checkbox">
+                                            <input type="checkbox" name="accept_terms" value="true" required="required"
+                                                class="mdc-checkbox__native-control" id="terms-checkbox" />
+                                            <div class="mdc-checkbox__background">
+                                                <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                    <path class="mdc-checkbox__checkmark-path" fill="none"
+                                                        d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                                </svg>
+                                                <div class="mdc-checkbox__mixedmark"></div>
+                                            </div>
+                                        </div>
+                                        <label for="terms-checkbox">
+                                            Cliccando questa casella confermi di concederci l'utilizzo dei tuoi dati, quindi accetteresti i<a
+                                                href="/media/docs/corpoetica_terms_and_conditions_30-06-19.pdf"
+                                                target="_blank">Termini e Condizioni</a>, inclusa la <a
+                                                href="/media/docs/corpoetica-Privacy_Policy.pdf"
+                                                target="_blank">Privacy Policy</a> e la <a
+                                                href="/docs/corpoetica-Cookie-Policy_64MGfxM.pdf"
+                                                target="_blank">Cookie Policy</a>?
+                                        </label>
+                                    </div>
+                                    <input type="submit" />
+                                </form>
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button class="
+        auth-secondary-button
+        mdc-button
+        mdc-dialog__footer__button
+        ">
+                                    <!-- Log in -->
+                                </button>
+                                <button tabindex="0" class="
+        auth-primary-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                    Iscriviti
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pb-auth-view view_verify-email">
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Verifica il tuo indirizzo email
+                                </h2>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                Abbiamo inviato una mail di verifica <strong class="verify-email-value"></strong>. Segui le istruzioni per continuare
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button tabindex="0" class="
+        auth-primary-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                    Ok!
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pb-auth-view view_verify-email-success">
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Evviva!
+                                </h2>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                La tua mail è stata verificata con successo ^^
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button class="
+        auth-secondary-button
+        mdc-button
+        mdc-dialog__footer__button
+        ">
+                                    Ok
+                                </button>
+                                <button tabindex="1" class="
+        auth-primary-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                    <!-- Log in -->
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pb-auth-view view_verify-email-error">
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Ops!
+                                </h2>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                Qualcosa è andato storto con la verifica della mail. <br /> Contattaci a <a
+                                    href="mailto:info@corpoetica.it" tabindex="-1">info@corpoetica.it</a>
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button tabindex="1" class="
+        auth-primary-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                    Va bene
+                                </button>
+                            </div>
+                        </div>
+                        <!-- sezione da rimuovere o tradurre -->
+                        <div class="pb-auth-view view_password-reset-request">
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Resetta la password
+                                </h2>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                <form action="https://primalbase.com/api/auth/password-reset-request/"
+                                    class="auth-password-reset-request-form" novalidate="novalidate">
+                                    <p>
+                                        Enter the email address associated with your account, and we'll email you a code to
+                                        reset your password
+                                    </p>
+                                    <div class="field__email mdc-text-field mdc-text-field--box">
+                                        <input type="email" name="email" required="required" class="mdc-text-field__input"
+                                            aria-controls="password-reset-email-helper-text" />
+                                        <label class="mdc-floating-label">
+                                            Email address
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <p id="password-reset-email-helper-text"
+                                        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                        Please enter a valid email address
+                                    </p>
+                                    <input type="submit" />
+                                </form>
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button class="
+        auth-secondary-button
+        mdc-button
+        mdc-dialog__footer__button
+        ">
+                                    Back to log in
+                                </button>
+                                <button tabindex="0" class="
+        auth-primary-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                    Send code
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pb-auth-view view_password-reset-confirm">
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Reset password
+                                </h2>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                <form action="https://primalbase.com/api/auth/password-reset/"
+                                    class="auth-password-reset-confirm-form" novalidate="novalidate">
+                                    <p>
+                                        Enter a new password and the code you received in an email.
+                                    </p>
+                                    <div class="
+        field__password
+        mdc-text-field
+        mdc-text-field--box
+        mdc-text-field--with-trailing-icon
+        ">
+                                        <input type="password" name="password" required="required" pattern=".{10,}"
+                                            class="mdc-text-field__input"
+                                            aria-controls="password-reset-password-helper-text"
+                                            autocomplete="new-password" />
+                                        <label class="mdc-floating-label">
+                                            New password
+                                        </label>
+                                        <div class="mdc-text-field__icon toggle-password-container">
+                                            <button type="button" class="mdc-icon-button show-password">
+                                                <svg class="pb-icon">
+                                                    <use xlink:href="#icon-md__remove_red_eye__filled"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="mdc-icon-button hide-password"
+                                                style="display: none">
+                                                <svg class="pb-icon">
+                                                    <use xlink:href="#icon-md__visibility_off__filled"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <p id="password-reset-password-helper-text"
+                                        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                        Password should be at least 10 symbols long
+                                    </p>
+                                    <div class="
+        field__token
+        mdc-text-field
+        mdc-text-field--box
+        ">
+                                        <input name="token" required="required" class="mdc-text-field__input"
+                                            aria-controls="password-reset-confirm-token-helper-text" autocomplete="off" />
+                                        <label class="mdc-floating-label">
+                                            Code from email
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <p id="password-reset-confirm-token-helper-text"
+                                        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                        Code shouldn't be empty
+                                    </p>
+                                    <input type="submit" />
+                                </form>
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button class="
+        auth-secondary-button
+        mdc-button
+        mdc-dialog__footer__button
+        ">
+                                    Back to log in
+                                </button>
+                                <button tabindex="0" class="
+        auth-primary-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                    Reset
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pb-auth-view view_two-f-a">
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Two-factor authentication
+                                </h2>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                <p>
+                                    This additional step helps prove it's really you logging in. Enter the authentication
+                                    code from your mobile device.
+                                </p>
+                                <form action="https://primalbase.com/api/auth/login/" class="auth-two-f-a-form"
+                                    novalidate="novalidate">
+                                    <div class="
+        field__token
+        mdc-text-field
+        mdc-text-field--box
+        ">
+                                        <input name="token" pattern="\d{6}" maxlength="6" required="required"
+                                            class="mdc-text-field__input" aria-controls="two-f-a-token-helper-text" />
+                                        <label class="mdc-floating-label">
+                                            6-digit authentication code
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <p id="two-f-a-token-helper-text"
+                                        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                        Incorrect code. Please try again.
+                                    </p>
+                                    <input type="submit" />
+                                </form>
+                                <p>
+                                    Don't have your mobile device? <span class="recovery-code-lead pseudo-link">Enter a
+                                        recovery code</span>
+                                </p>
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button class="
+        auth-secondary-button
+        mdc-button
+        mdc-dialog__footer__button
+        ">
+                                    Back to log in
+                                </button>
+                                <button tabindex="0" class="
+        auth-primary-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                    Verify
+                                </button>
+                            </div>
+                        </div>
+                        <div class="pb-auth-view view_two-f-a-recovery-code">
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Enter your recovery code
+                                </h2>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                <p>
+                                    Enter one of the recovery codes you saved when setting up 2-factor authentication. <a
+                                        href="mailto:support@primalbase.com" tabindex="-1">Contact us</a> if you don't have
+                                    your recovery codes.
+                                </p>
+                                <form action="https://primalbase.com/api/auth/login/"
+                                    class="auth-two-f-a-recovery-code-form" novalidate="novalidate">
+                                    <div class="field__recovery_code mdc-text-field mdc-text-field--box">
+                                        <input name="reserve_code" pattern="[A-Za-z0-9]{10}" maxlength="10"
+                                            required="required" class="mdc-text-field__input"
+                                            aria-controls="two-f-a-recovery-code-helper-text" />
+                                        <label class="mdc-floating-label">
+                                            10-character recovery code
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <p id="two-f-a-recovery-code-helper-text"
+                                        class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                        Wrong code
+                                    </p>
+                                    <input type="submit" />
+                                </form>
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button class="
+        auth-secondary-button
+        mdc-button
+        mdc-dialog__footer__button
+        ">
+                                    Go back
+                                </button>
+                                <button tabindex="0" class="
+        auth-primary-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                    Verify
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- fine sezione da rimuovere o tradurre -->
+                    <div class="mdc-dialog__backdrop"></div>
+                </div>
+                <aside class="mdc-dialog newsletter-and-terms-dialog fullscreen">
+                    <div class="pb-newsletter-and-terms-view view_newsletter-and-terms">
+                        <form action="https://primalbase.com/api/newsletter-with-terms/create/"
+                            class="mdc-dialog__surface newsletter-and-terms-form" novalidate>
+                            <div class="pb-mobile-dialog-header">
+                                <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                                <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                    <svg class="pb-icon">
+                                        <use xlink:href="#icon-md__close__filled"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mdc-dialog__header">
+                                <h2 class="mdc-dialog__header__title">
+                                    Vuoi far parte
+                                </h2>
+                                <h2 class="mdc-dialog__header__title">
+                                    della rivoluzione del movimento?
+                                </h2>
+                                <p class="lead-text">
+                                    Iscriversi alla newsletter è il primo passo, poi partecipare e condividere saranno i successivi ❤
+                                </p>
+                            </div>
+                            <div class="mdc-dialog__body">
+                                <div class="newsletter-and-terms-text-field mdc-text-field mdc-text-field--box">
+                                    <input type="text" id="nat_name" name="name" class="mdc-text-field__input"
+                                        aria-controls="newsletter-and-terms-reset-name-helper-text" />
+                                    <label for="nat_name" class="mdc-floating-label">
+                                        Il tuo nome
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <p id="newsletter-and-terms-name-helper-text"
+                                    class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                    name_is_incorrect
+                                </p>
+                                <div class="newsletter-and-terms-text-field mdc-text-field mdc-text-field--box">
+                                    <input type="email" id="nat_email" name="email" class="mdc-text-field__input"
+                                        aria-controls="newsletter-and-terms-reset-email-helper-text" required />
+                                    <label for="nat_email" class="mdc-floating-label">
+                                        La tua mail
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <p id="newsletter-and-terms-email-helper-text"
+                                    class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                    Inserisci un indirizzo valido, grazie!
+                                </p>
+                                <div class="field__terms mdc-form-field">
+                                    <div class="agreement-checkbox mdc-checkbox">
+                                        <input type="checkbox" name="accept_terms" value="true" required="required"
+                                            class="mdc-checkbox__native-control" id="terms-checkbox" />
+                                        <div class="mdc-checkbox__background">
+                                            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                <path class="mdc-checkbox__checkmark-path" fill="none"
+                                                    d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                            </svg>
+                                            <div class="mdc-checkbox__mixedmark"></div>
+                                        </div>
+                                    </div>
+                                    <label for="terms-checkbox">
+                                        Cliccando questa casella confermi di concederci l'utilizzo dei tuoi dati, quindi accetteresti i<a
+                                            href="/media/docs/corpoetica_terms_and_conditions_30-06-19.pdf"
+                                            target="_blank">Termini e Condizioni</a>, inclusa la <a
+                                            href="/media/docs/corpoetica-Privacy_Policy.pdf"
+                                            target="_blank">Privacy Policy</a> e la <a
+                                            href="/docs/corpoetica-Cookie-Policy_64MGfxM.pdf"
+                                            target="_blank">Cookie Policy</a>?
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="mdc-dialog__footer">
+                                <button class="
+        mdc-button
+        mdc-dialog__footer__button
+        mdc-dialog__footer__button--cancel
+        ">
+                                    No grazie
+                                </button>
+                                <button type="submit" class="
+        subscribe-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        " disabled="true">
+                                    Iscrivimi
+                                </button>
+                            </div>
+                    </div>
+                    </form>
+                    <div class="mdc-dialog__backdrop"></div>
+                </aside>
+                <aside class="
+        mdc-dialog
+        request-tour-dialog
+        fullscreen
+        " role="alertdialog">
+                    <form action="https://primalbase.com/api/request_a_tour/create/"
+                        class="mdc-dialog__surface request-tour-form" novalidate>
+                        <div class="pb-mobile-dialog-header">
+                            <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                            <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                <svg class="pb-icon">
+                                    <use xlink:href="#icon-md__close__filled"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mdc-dialog__header">
+                            <h2 class="mdc-dialog__header__title">
+                                Contattaci
+                            </h2>
+                            <p class="lead-text">
+                                Lasciaci i tuoi riferimenti, contatteremo appena possibile (e speriamo di vederti presto a uno dei nostri <a href="#workspaces-list">prossimi appuntamenti</a>)
+                            </p>
+                        </div>
+                        <div class="mdc-dialog__body">
+                            <div class="field full-width">
+                                <div class="
+                                mdc-select
+                                mdc-select--box
+                                ">
+                                    <select name="workspace" class="mdc-select__native-control">
+                                        <option value="1" selected>
+                                            Corso settimanale
+                                        </option>
+                                        <option value="2">
+                                            Workshop
+                                        </option>
+                                        <option value="3">
+                                            Jam
+                                        </option>
+                                        <option value="4">
+                                            Altro
+                                        </option>
+                                    </select>
+                                    <label class="mdc-floating-label">
+                                        C'è un argomento che preferisci?
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                            </div>
+                            <div class="field full-width">
+                                <div class="mdc-text-field mdc-text-field--box">
+                                    <input type="text" id="full-name" name="name" class="mdc-text-field__input" required>
+                                    <label for="full-name" class="mdc-floating-label">
+                                        Nome e Cognome
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                    Nome e Cognome, grazie
+                                </p>
+                            </div>
+                            <div class="field half-width">
+                                <div class="mdc-text-field mdc-text-field--box">
+                                    <input type="email" id="email" name="email" class="mdc-text-field__input" required>
+                                    <label for="email" class="mdc-floating-label">
+                                        Indirizzo email
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                    Ci serve per la tua conferma a lasciarci i tuoi dati
+                                </p>
+                            </div>
+                            <div class="field half-width">
+                                <div class="mdc-text-field mdc-text-field--box">
+                                    <input type="text" id="phone" name="phone" class="mdc-text-field__input" required>
+                                    <label for="phone" class="mdc-floating-label">
+                                        Numero di telefono
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">
+                                    Internazionale (es.: +39 0123456789)
+                                </p>
+                            </div>
+                            <div class="field half-width visit-date-field">
+                                <div class="mdc-text-field mdc-text-field--box date-input">
+                                    <input class="mdc-text-field__input empty" name="visit_date" required>
+                                    <svg class="pb-icon trigger">
+                                        <use xlink:href="#icon-md__arrow_drop_down__filled"></use>
+                                    </svg>
+                                    <label class="mdc-floating-label">
+                                        Hai una data nella quale preferiresti ricevere un nostro contatto?
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                    Facci sapere quando potrebbe essere meglio per te
+                                </p>
+                            </div>
+                            <div class="field half-width">
+                                <div class="mdc-select mdc-select--box mdc-text-field--fullwidth">
+                                    <select class="mdc-select__native-control" name="visit_time" id="visit-time" required>
+                                        <option value="10:00">10:00</option>
+                                        <option value="11:00">11:00</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">all'una</option>
+                                        <option value="14:00">alle due</option>
+                                        <option value="15:00">alle tre</option>
+                                        <option value="16:00">alle quattro</option>
+                                        <option value="17:00">alle cinque</option>
+                                        <option value="18:00">alle sei</option>
+                                        <option value="18:00">alle sette</option>
+                                        <option value="20:00">alle otto</option>
+                                        <option value="21:00">alle nove</option>
+                                        <option value="22:00">alle dieci</option>
+                                        <option value="23:00">alle undici</option>
+                                    </select>
+                                    <label for="visit-time" class="mdc-floating-label">
+                                        Orario di contatto
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                                <p class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                    Scegli l'orario che preferisci
+                                </p>
+                            </div>
+                            <div class="field full-width">
+                                <div class="mdc-select mdc-select--box mdc-text-field--fullwidth">
+                                    <select class="mdc-select__native-control" name="purpose" id="purpose" required>
+                                        <option value="nomad">
+                                            Sto pensando di partecipare alle vostre classi
+                                        </option>
+                                        <option value="startup">
+                                            Mi piacerebbe iscrivermi a un workshop
+                                        </option>
+                                        <option value="event">
+                                            Vorrei partecipare a un vostro incontro
+                                        </option>
+                                        <option value="blogger">
+                                            Sono un giornalista / blogger che cerca ispirazioni
+                                        </option>
+                                        <option value="partnership">
+                                            Sto esplorando potenziali collaborazioni
+                                        </option>
+                                    </select>
+                                    <label for="purpose" class="mdc-floating-label">
+                                        Cosa ti porta qui?
+                                    </label>
+                                    <div class="mdc-line-ripple"></div>
+                                </div>
+                            </div>
+                            <div class="field full-width">
+                                <div class="agreement-form-field mdc-form-field">
+                                    <div class="agreement-checkbox mdc-checkbox">
+                                        <input type="checkbox" class="mdc-checkbox__native-control" id="agreement"
+                                            name="agreement" required />
+                                        <div class="mdc-checkbox__background">
+                                            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                                <path class="mdc-checkbox__checkmark-path" fill="none"
+                                                    d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                            </svg>
+                                            <div class="mdc-checkbox__mixedmark"></div>
+                                        </div>
+                                    </div>
+                                    <label for="agreement">
+                                            Cliccando questa casella confermi di concederci l'utilizzo dei tuoi dati, quindi accetteresti i<a
+                                            href="/media/docs/corpoetica_terms_and_conditions_30-06-19.pdf"
+                                            target="_blank">Termini e Condizioni</a>, inclusa la <a
+                                            href="/media/docs/corpoetica-Privacy_Policy.pdf"
+                                            target="_blank">Privacy Policy</a> e la <a
+                                            href="/docs/corpoetica-Cookie-Policy_64MGfxM.pdf"
+                                            target="_blank">Cookie Policy</a>?
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdc-dialog__footer">
+                            <div class="field__submit-button" data-mdc-auto-init="MDCRipple">
+                                <button type="submit" class="mdc-button mdc-button--raised field__submit">
+                                    <span class="submit-button-text">
+                                        Invia!
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="mdc-dialog__backdrop"></div>
+                </aside>
+                <aside class="estimated-price-dialog mdc-dialog fullscreen">
+                    <div class="mdc-dialog__surface">
+                        <div class="pb-mobile-dialog-header">
+                            <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                            <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                <svg class="pb-icon">
+                                    <use xlink:href="#icon-md__close__filled"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mdc-dialog__header">
+                            <h2 class="mdc-dialog__header__title">
+                                Vuoi saperne di più su questo evento?
+                            </h2>
+                        </div>
+                        <div class="mdc-dialog__body">
+                            Puoi cliccare sul pulsante e leggere l'approfondimento, 
+                            oppure andare sulla nostra pagina facebook <a
+                            href="https://facebook.com/asscorpoetica"
+                            target="_blank">pagina facebook</a>,
+                            oppure contattarci a <a
+                            href="mailto:info@corpoetica.it"
+                            target="_blank">info@corpoetica.it</a>,
+                        </div>
+                        <footer class="mdc-dialog__footer">
+                            <button type="button" class="
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        mdc-dialog__footer__button--cancel
+        ">
+                                Ok grazie :)
+                            </button>
+                        </footer>
+                    </div>
+                    <div class="mdc-dialog__backdrop"></div>
+                </aside>
+                <aside class="mdc-dialog newsletter-dialog fullscreen">
+                    <form action="https://primalbase.com/api/newsletter/create/" class="mdc-dialog__surface newsletter-form"
+                        novalidate>
+                        <div class="pb-mobile-dialog-header">
+                            <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                            <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                <svg class="pb-icon">
+                                    <use xlink:href="#icon-md__close__filled"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mdc-dialog__header">
+                            <h2 class="mdc-dialog__header__title">
+                                I riepiloghi sempre aggiornati dei nostri appuntamenti li mandiamo via mail
+                            </h2>
+                        </div>
+                        <div class="mdc-dialog__body">
+                            <div class="
+        newsletter-text-filed
+        mdc-text-field
+        mdc-text-field--box
+        ">
+                                <input type="email" name="email" required="required" class="mdc-text-field__input"
+                                    aria-controls="newsletter-reset-email-helper-text" />
+                                <label class="mdc-floating-label">
+                                    Indirizzo email
+                                </label>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <p id="newsletter-email-helper-text"
+                                class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                Inserisci un indirizzo email valido, grazie
+                            </p>
+                        </div>
+                        <div class="mdc-dialog__footer">
+                            <button type="submit" class="
+        subscribe-button
+        mdc-button
+        mdc-button--raised
+        mdc-dialog__footer__button
+        ">
+                                Iscrivimi
+                            </button>
+                        </div>
+                    </form>
+                    <div class="mdc-dialog__backdrop"></div>
+                </aside>
+                <!-- inizio sezione da rimuovere -->
+                <aside class="
+        mdc-dialog
+        get-in-touch-tour-dialog
+        fullscreen
+        ">
+                    <form action="https://primalbase.com/api/get_in_touch/create/"
+                        class="get-in-touch-tour-form mdc-dialog__surface" novalidate>
+                        <div class="pb-mobile-dialog-header">
+                            <button style="position:absolute; left:-10000px" tabindex="1"></button>
+                            <button type="button" class="close-dialog-button mdc-icon-button" tabindex="-1">
+                                <svg class="pb-icon">
+                                    <use xlink:href="#icon-md__close__filled"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mdc-dialog__header">
+                            <h2 class="mdc-dialog__header__title">
+                                Rimani in movimento
+                            </h2>
+                            <p class="lead-text">
+                                Pronti? Vieni a uno dei nostri incontri
+                            </p>
+                        </div>
+                        <div class="mdc-dialog__body">
+                            <div class="
+        mdc-select
+        mdc-select--box
+        mdc-text-field--fullwidth
+        ">
+                                <select name="workspace" class="mdc-select__native-control">
+                                    <option value="1" selected>
+                                        Amsterdam
+                                    </option>
+                                    <option value="2">
+                                        Berlin
+                                    </option>
+                                    <option value="3">
+                                        London
+                                    </option>
+                                    <option value="4">
+                                        New York
+                                    </option>
+                                    <option value="5">
+                                        Singapore
+                                    </option>
+                                </select>
+                                <label class="mdc-floating-label">
+                                    Workspace location
+                                </label>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <div class="mdc-text-field mdc-text-field--box full-width-field">
+                                <input type="text" name="name" class="mdc-text-field__input" required />
+                                <label class="mdc-floating-label">
+                                    Full name
+                                </label>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="mdc-text-field mdc-text-field--box full-width-field">
+                                        <input type="email" name="email" class="mdc-text-field__input" required />
+                                        <label class="mdc-floating-label">
+                                            Email address
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="mdc-text-field mdc-text-field--box full-width-field">
+                                        <input type="tel" name="phone" class="mdc-text-field__input" required />
+                                        <label class="mdc-floating-label">
+                                            Phone number
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                    <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent">
+                                        International (e.g. +31 0123456789)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mdc-text-field mdc-text-field--box full-width-field">
+                                <input type="text" name="company" class="mdc-text-field__input" required />
+                                <label class="mdc-floating-label">
+                                    Company name
+                                </label>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="mdc-text-field mdc-text-field--box full-width-field">
+                                        <input type="text" name="job_title" class="mdc-text-field__input" required />
+                                        <label class="mdc-floating-label">
+                                            Your job title
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="mdc-select mdc-select--box mdc-text-field--fullwidth">
+                                        <select class="mdc-select__native-control" name="number_of_people">
+                                            <option value="1">1 — 5</option>
+                                            <option value="2">5 — 10</option>
+                                            <option value="3">15 — 20</option>
+                                        </select>
+                                        <label class="mdc-floating-label">
+                                            Team size
+                                        </label>
+                                        <div class="mdc-line-ripple"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-text-field mdc-text-field--box mdc-text-field--textarea full-width-field">
+                                <textarea class="mdc-text-field__input" name="company_description" required></textarea>
+                                <label class="mdc-floating-label">
+                                    Tell us more about your company
+                                </label>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <div class="agreement-form-field mdc-form-field">
+                                <div class="agreement-checkbox mdc-checkbox">
+                                    <input type="checkbox" name="agreement" id="agreement-control"
+                                        class="mdc-checkbox__native-control" required />
+                                    <div class="mdc-checkbox__background">
+                                        <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                            <path class="mdc-checkbox__checkmark-path" fill="none"
+                                                d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+                                        </svg>
+                                        <div class="mdc-checkbox__mixedmark"></div>
+                                    </div>
+                                </div>
+                                <label for="agreement-control">
+                                    By clicking this box I confirm that I have fully read and agree to the <a
+                                        href="legal/terms/index.html">Primalbase Terms and Conditions</a>, including the <a
+                                        href="legal/privacy/index.html">Primalbase Privacy Policy</a> and <a
+                                        href="legal/cookies/index.html">Cookie Policy</a>.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mdc-dialog__footer">
+                            <button class="mdc-button mdc-button--raised field__submit mdc-dialog__footer__button">
+                                <span class="submit-button-text">
+                                    Send request
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="mdc-dialog__backdrop"></div>
+                </aside>
+            <!-- fine sezione da rimuovere -->
+            </div>
