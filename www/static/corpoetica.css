@@ -24,3 +24,11 @@ span.titolone-alto {
 .press-highlights-stripe .inner span:last-child {
     display: none;
 }
+
+.desktop .container-wrapper {
+    display: flex ;
+}
+.desktop .mdc-card {
+    display: inline-flex;
+    margin-right: 10px;
+}

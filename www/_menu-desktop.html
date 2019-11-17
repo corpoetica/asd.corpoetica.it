@@ -1,0 +1,49 @@
+
+<header class="
+pb-header
+style__default
+">
+            <div class="header-content">
+                    <div class="pb-logo">
+                            <!-- <img src="https://corpoeticadotblog.files.wordpress.com/2018/11/cropped-corpoetica-logo3-e1543246501588.png?w=32" class="logo-img" /> -->
+                            <img src="https://corpoeticadotblog.files.wordpress.com/2018/11/corpoetica-logo2.png?w=96" class="logo-img" />
+                            <!-- <span class="titolone-alto">Corpoetica</span> -->
+                        </div>
+                <div class="
+                    pb-main-nav
+                    style__default
+                    ">
+                    
+                    {{#section navs sortable=true label="Menu"}}
+                    <div class="
+                    item
+                    type-simple
+                    id__next_location
+                    ">
+                        <a class="item-holder" href="{{url type=link label='URL della pagina'}}"
+                            data-track-name="{{_permalink}}-link-click" data-track-context="main-menu">
+                            <span class="item-text">
+                                {{linkText label='Testo del link'}}
+                            </span>
+                        </a>
+                    </div>
+                    {{/section}}
+                    
+                    
+                    
+                </div>
+                <div class="pb-header-auth">
+                    <div class="header-sign-in">
+                        <button class="header-sign-in-button mdc-button" data-mdc-auto-init="MDCRipple">
+                            <!-- Log in -->
+                        </button>
+                    </div>
+                    <div class="header-sign-up">
+                        <button class="header-sign-up-button mdc-button mdc-button--outlined"
+                            data-mdc-auto-init="MDCRipple">
+                            Iscriviti
+                        </button>
+                    </div>
+                </div>
+            </div>
+        

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="action_home" data-action="home" data-action-type="public">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Assciuuntaaa - Corpoetica - {{titolone type=html}}
+    </title>
+    <meta name="viewport" content="width=375, user-scalable=no">
+    <meta name="description"
+        content="{{sottotitolo}}">
+    <meta property="og:title" content="Corpoetica - {{titolone type=html}}">
+    <meta property="og:description"
+        content="{{sottotitolo}}">
+    <meta property="og:image" content="https://corpoeticadotblog.files.wordpress.com/2018/11/corpoetica-logo2.png?w=192">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="index.html">
+    <link rel="canonical" href="index.html">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://corpoeticadotblog.files.wordpress.com/2018/11/cropped-corpoetica-logo3-e1543246501588.png?w=32" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://corpoeticadotblog.files.wordpress.com/2018/11/cropped-corpoetica-logo3-e1543246501588.png?w=16" />
+    <div id="pb-svg-icons-holder" style="display: none"
+        data-url="../static/img/icons.083af817d5e0.svg"></div>
+    <script type="text/data" id="pb-global-data">
+{"lang": "en", "platform": "desktop", "envName": "production", "cryptocurrencies": ["BTC", "ETH", "WAVES", "PBT"], "urls": {"primalbase:home": "/en/", "primalbase:sign-in": "/en/sign-in/", "primalbase:my_bookings": "/en/my-bookings/", "primalbase:my-membership": "/en/my-membership/", "primalbase:my-membership-leasing": "/en/my-membership/msp/", "primalbase:settings": "/en/settings/", "auth:login": "/api/auth/login/", "auth:user_create": "/api/auth/users/", "auth:logout": "/api/auth/logout/", "auth:user_otp_device": "/api/auth/users/0000/otp/device/", "auth:user_otp_codes": "/api/auth/users/0000/otp/codes/", "auth:confirm_email": "/api/auth/confirm-email/", "auth:auth_level": "/api/auth/level/", "api:calendar": "/api/calendar/0000/", "api:leasing_orders": "/api/leasing-orders/", "api:leasing_profit": "/api/leasing-profit/"}, "user": {}, "constants": {"GOOGLE_MAP_API_KEY": "AIzaSyCK_KIHoRKY0gZhc4eNfkRBRIegyVit3wI", "AMPLITUDE_API_KEY": "70c4d61ea4846d7f6122c886248e614c", "DESK_MAX_LENGTH": 90, "TOTAL_DESK_MAX_LENGTH": 90, "OFFICE_MAX_LENGTH": 14, "TOTAL_OFFICE_MAX_LENGTH": 30, "MAX_RESERVATIONS_24H": 10, "TWO_F_A_TOKEN_LENGTH": 6, "ORDER_MIN_PRICE": "8.00", "ORDER_DEFAULT_PRICE": "10.00", "GAS_LIMIT": "21000", "GAS_PRICE": 1}, "serverDateUtc": "2019-10-05", "serverTimeUtc": "2019-10-05T00:35:20.604839+00:00"}
+</script>
+    <link rel="stylesheet" href="../static/libs.desktop.build.css">
+    <link rel="stylesheet" href="../static/primalbase.desktop.build.css">
+    <link rel="stylesheet" href="../static/corpoetica.css">
+    <script src="../static/head.desktop.build.js"></script>
+
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXX-2"></script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "UA-XXX-2");
+        gtag("config", "AW-XXX");
+    </script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXX-2"></script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXX-2', { 'optimize_id': 'GTM-XXX' });
+    </script>
+</head>
+
+<body class="desktop">
+    <div class="pb-page ">
+        <div class="cookie-banner pb-hidden">
+            <div class="container">
+                <div class="text">
+                    Ogni tanto facciamo i <a href="legal/cookies/index.html">cookies</a>. Li usiamo anche sul sito e non tracciamo niente :)
+                </div>
+                <button type="button" class="
+                close-button
+                mdc-icon-button
+                ">
+                    <svg class="pb-icon">
+                        <use xlink:href="#icon-md__close__filled"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <header class="
+pb-header
+style__default
+">
+{{> menu-desktop}}
+            
+            
+        </header>
+        <main class="pb-content">
+            <div class="home-page">
+                    <div class="columns">
+                            <div class="header-column">
+                                <h1>
+                                        {{titolone type=html}}
+                                </h1>
+                            </div>
+                            <div class="lead-text-column">
+                                    {{sottotitolo type=html}}
+                            </div>
+                        </div>
+                <div id="workspaces-list" class="workspaces-list">
+                    <div class="container-wrapper">
+                        <div class="container">
+                            
+                            {{#section appuntamenti multiple=true sortable=true label="Corsi e seminari"}}
+                            <div class="
+                                mdc-card
+                                workspace-card
+                                workspace-card--horizontal
+                                " data-value="{{date type=date time=true format='%d-%m-%Y'}}">
+                                <div class="mdc-card__primary-action">
+                                    <div class="mdc-card__media">
+                                        <img src="{{thumb type=image width=768 height=400 tag=false}}"
+                                            class="workspace-image" />
+                                    </div>
+                                    <div class="mdc-card__content">
+                                        <a class="pseudo-link" href="{{_permalink}}"
+                                            data-track-name="workspace-card-click">
+                                            <h2 class="heading">
+                                                {{title}}
+                                            </h2>
+                                        </a>
+                                        <div class="price-widget ">
+                                            <div class="price-block">
+                                                <strong class="price">
+                                                    <span class="pb-money" data-value="{{date type=date time=true format='%d-%m-%Y'}}"
+                                                        data-currency="{{date type=date time=true format='%H:%M'}}">
+                                                        {{data label="Data - testo al posto della data" required=false}}
+                                                    </span>
+                                                </strong>
+                                                <strong class="price-approx">
+                                                   {{ora label="Orario - testo al posto dell'ora" required=false}}
+                                                </strong> 
+                                            </div>
+                                            <label class="label">
+                                                <span>
+                                                    {{abstract type=html}}
+                                                </span>
+                                                <div class="hint" data-currency="EUR">
+                                                    <div class="hint-inner">
+                                                        <svg class="pb-icon">
+                                                            <use xlink:href="#icon-md__help_outline__filled"></use>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <a href="{{_permalink}}" class="mdc-button mdc-button--raised"
+                                        data-track-name="workspace-card-book-button-click">
+                                        {{button}}
+                                    </a>
+                                </div>
+                            </div>
+                            {{/section}}
+
+                            <div class="
+                            mdc-card
+                            workspace-card
+                            workspace-card--horizontal
+                            new-locations
+                            ">
+                                <div class="mdc-card__primary-action" data-track-name="new-locations-card-click">
+                                    <div class="mdc-card__media">
+                                        <img class="workspace-image"
+                                            src="https://corpoeticadotblog.files.wordpress.com/2018/10/acquarelli-png-page-003.jpg?w=296&h=144">
+                                    </div>
+                                    <div class="mdc-card__content">
+                                        <h2 class="heading">
+                                            Altri appuntamenti
+                                        </h2>
+                                        <p>
+                                            Questo è solo l'inizio! Iscriviti alla nostra newsletter per ricevere gli aggiornamenti.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="mdc-card__actions">
+                                    <button class="mdc-button" data-track-name="stay-tuned-button-click">
+                                        Resta in movimento
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="homepage-built-on-blockchain">
+                    {{#section boxHomeSection sortable=true label="Home: sezione box"}}
+                    <h2 class="title">
+                        {{boxTitolone label="Titolone box in home"}}
+                    </h2>
+                    <p class="text">
+                        Imparare ad ascoltarlo e comprenderne il linguaggio è la chiave per dialogare con lui e abitarlo al meglio.
+                        Per farlo stiamo sviluppando alcune aree tra le quali:
+                    </p>
+                    <!-- <div class="usp-list">
+                        {{#section boxHome multiple=true sortable=true label="Box in home"}}
+                        <div class="usp-item">
+                            <img src="{{thumb type=image width=552 height=377 tag=false required=false}}"
+                                class="workspace-image" />
+                            <h3 class="heading-6">
+                                {{title}}
+                            </h3>
+                            <p>
+                                {{description type=html}}
+                            </p>
+                        </div>
+                        {{/section}}
+                    </div> -->
+                </section>
+                <section class="homepage-project-features">
+                        <div class="features-list">
+                            {{#section boxHome multiple=true sortable=true label="Box in home"}}    
+                            <div class="features-item">
+                                <div class="illustration">
+                                    <img class="image" src="{{thumb type=image width=552 height=377 tag=false required=false}}">
+                                </div>
+                                <div class="about">
+                                    <h2 class="title">
+                                        {{title}}
+                                    </h2>
+                                    <p class="description">
+                                        {{description type=html}}
+                                    </p>
+                                </div>
+                            </div>
+                            {{/section}}
+                        </div>
+                        <!-- <div class="how-it-works">
+                            <a href="how-it-works/index.html" class="mdc-button mdc-button--raised"
+                                data-track-name="how_it_works-link-click" data-track-context="usp-block">
+                                How it works
+                            </a>
+                        </div> -->
+                        <div class="request-tour ">
+                            <button class="mdc-button mdc-button--raised tour-request-button ">
+                                Scrivici
+                            </button>
+                        </div>
+                    </section>
+                <a href="{{buttonLink label='Button link'}}" class="mdc-button read-more-button"
+                    data-track-name="how_it_works-link-click">
+                    {{button}}
+                </a>
+                {{/section}}
+                <section class="homepage-solutions">
+                    {{#section tab sortable=true label="Home: titolo schede"}}
+                    <h2 class="heading-5">
+                        {{titolone}}
+                    </h2>
+                    {{/section}}
+                    <div class="scroll-area">
+                        <nav class="solutions-tab-bar mdc-tab-bar">
+                            {{#section tabs sortable=true label="Schede: scheda singola"}}
+                            <span class="mdc-tab mdc-tab--active" data-rel="{{scheda placeholder='inserisci una sola parola che funga da link per la navigazione tra le schede'}}">
+                                {{title}}
+                            </span>
+                            {{/section}}
+                            <span class="mdc-tab-bar__indicator"></span>
+                        </nav>
+                    </div>
+                    <div class="solution-block-list">
+                        {{#section tabs sortable=true label="Schede: scheda singola"}}
+                        <div class="solution-block" data-rel="{{scheda}}">
+                            <img src="{{thumb type=image width=326 height=196 tag=false required=false}}" />
+                            <p>
+                                {{description type=html}}
+                            </p>
+                            {{#if linkURL}}
+                            <a href="{{linkURL required=false}}" class="mdc-button">
+                                {{linkText required=false}}
+                            </a>
+                            {{/if}}
+                            {{#if buttonClass}}
+                            <button type="button" class="
+                            {{buttonClass required=false label='classe css dell\'azione che esegue il pulsante'}}
+                            mdc-button
+                            ">
+                                {{buttonText required=false}}
+                            </button>
+                            {{/if}}
+                        </div>
+                        {{/section}}
+                    </div>
+                </section>
+                <section class="homepage-faq">
+                    {{#section faq sortable=true label="Home: titolo faq"}}
+                    <h2 class="heading-5">
+                        {{titolone}}
+                    </h2>
+                    {{/section}}
+                    <div class="accordion">
+                        {{#section faqs sortable=true label="FAQ: riga espandibile"}}
+                        <h3 class="accordion__item-header">
+                             {{title}}
+                            <svg class="mdc-list-item__meta pb-icon pb-icon--arrow-down">
+                                <use xlink:href="#icon-md__arrow_down__filled"></use>
+                            </svg>
+                            <svg class="mdc-list-item__meta pb-icon pb-icon--arrow-up">
+                                <use xlink:href="#icon-md__arrow_up__filled"></use>
+                            </svg>
+                        </h3>
+                        <div class="accordion__item-text">
+                            {{description type=html}}
+                        </div>
+                        {{/section}}
+                    </div>
+                </section>
+                <section class="homepage-tour-request">
+                    {{#section homeContattaci sortable=true label="Home: contattaci"}}
+                    <div class="container" {{#if sfondo}} style="background-image: url('{{sfondo type=image width=414 height=288 tag=false required=false}}');" {{/if}}>
+                        <div class="text">
+                            <h2 class="heading-5">
+                                {{titolone}}
+                            </h2>
+                            <p class="description">
+                                {{description type=html}}
+                            </p>
+                            <button type="button" class="
+                                {{buttonClass placeholder='inserisci una classe css che lancia una zione come ad esempio: \'tour-request-button''}}
+                                mdc-button
+                                mdc-button--raised
+                                ">
+                                {{buttonText}}
+                            </button>
+                        </div>
+                    </div>
+                    {{/section}}
+                </section>
+                <section class="homepage-testimonials">
+                    {{#section storia label="Home: titolo cards"}}
+                    <h2 class="heading-5">
+                        {{titolone}}
+                    </h2>
+                    {{/section}}
+                    <div class="container-wrapper">
+                        <div class="container">
+                            {{#section cards multiple=true sortable=true label='Cards: singola card'}}
+                            <div class="testomonial-card mdc-card">    
+                                <div href="{{link required=false type=link}}" rel="noopener" class="mdc-card__primary-action">
+                                    <div class="mdc-card__content">
+                                        <div class="single-card">
+                                            {{description type=html}}
+                                        </div>
+                                        <div class="footer">
+                                            {{circolino type=image required=false width=44 height=44 label="Immaginetta a cerchio"}}
+                                            <div class="details">
+                                                {{#if titolo}}
+                                                <div class="name">
+                                                    {{titolo required=false}}
+                                                </div>
+                                                {{/if}}
+                                                {{#if datacardText}}
+                                                <span class="pb-date-text" data-date="{{datacard type=date format='%Y-%m-%d' required=false tag=false}}" data-skeleton="yMMMd">
+                                                    {{datacardText required=false label="Parola chiave oppure Testo al posto della data"}}
+                                                </span>
+                                                {{/if}}
+                                                {{#if intro}}
+                                                    <span>&middot;</span>
+                                                    {{intro label="Altra parola chiave (seprata da un puntino)" required=false}}
+                                                {{/if}}
+                                                {{#if link}}
+                                                    <span>&middot;</span>
+                                                    <a href="{{link required=false type=link}}" rel="noopener" class="mdc-card__primary-action">
+                                                        {{linkText label="Testo del link" required=false}}
+                                                    </a>
+                                                {{/if}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/section}}
+                        </div>
+                    </div>
+                </section>
+                <section class="homepage-press">
+                    {{#section collaborazioni sortable=true label="Home: titolo collaborazioni"}}
+                    <h2 class="heading-5">
+                        {{titolone}}
+                    </h2>
+                    {{/section}}
+                    <div class="press-highlights-stripe">
+                        <div class="container-wrapper">
+                            <div class="container">
+                                <div class="inner">
+                                    {{#section collaborazionis sortable=true label="Collaborazioni: loghi"}}
+                                    <a href="{{linkURL}}"
+                                        class="press-image-link" target="_blank" rel="noopener">
+                                        {{#if thumb}}
+                                        <img class="press-image"
+                                            src="{{thumb type=image width=155 height=48 tag=false required=false}}">
+                                            <h2 class="heading-5" style="visibility: hidden;">
+                                                {{nome}}
+                                            </h2>
+                                        {{/if}}
+                                        {{#unless thumb}}
+                                        <h2 class="heading-5" style="visibility: visible;">
+                                            {{nome}}
+                                        </h2>
+                                        {{/unless}}
+                                    </a>
+                                    <span class="heading-5">&middot;</span>
+                                    {{/section}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        {{> pb-dialogs}}
+
+        <footer class="pb-footer">
+            <div class="footer-content">
+                <div class="column">
+                    <h3 class="heading">
+                        Rimani in movimento
+                    </h3>
+                    <div class="newsletter-form-block">
+                        <div class="newsletter-form-success pb-hidden">
+                            <svg class="success-icon pb-icon">
+                                <use xlink:href="#icon-md__check"></use>
+                            </svg>
+                            <span>
+                                Grazie per l'iscrizione! <br /> Segui il link via mail per confermare
+                            </span>
+                        </div>
+                        <form class="newsletter-form" action="https://primalbase.com/api/newsletter/create/" novalidate>
+                            <div class="
+                                newsletter-text-filed
+                                mdc-text-field
+                                mdc-text-field--box
+                                mdc-text-field--with-trailing-icon
+                                ">
+                                <input type="email" name="email" required="required" class="mdc-text-field__input"
+                                    aria-controls="newsletter-reset-email-helper-text" />
+                                <label class="mdc-floating-label">
+                                    Indirizzo email
+                                </label>
+                                <div class="subscribe-pseudo-button mdc-text-field__icon">
+                                    <span>
+                                        Iscrivimi
+                                    </span>
+                                </div>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <p id="newsletter-email-helper-text"
+                                class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg">
+                                Inserisci un indirizzo mail valido
+                            </p>
+                        </form>
+                    </div>
+                    {{> seguici}}
+                </div>
+                <div class="links-bunch-wrapper">
+                    <div class="column links-bunch">
+                        <h3 class="heading">
+                            I prossimi appuntamenti
+                        </h3>
+                        <ul>
+                            {{#section appuntamenti}}
+                            <li>
+                                <a href="{{_permalink}}" data-track-name="appuntamento-link-click"
+                                    data-track-context="footer">
+                                    {{title}}
+                                </a>
+                            </li>
+                            {{/section}}
+                        </ul>
+                    </div>
+                    <div class="column links-bunch">
+                        <h3 class="heading">
+                            Scopri qualcosa in più su di noi
+                        </h3>
+                        <ul>
+                            {{#section navs sortable=true label="Menu"}}
+                            <li>
+                                <a href="{{url type=link label='URL della pagina'}}" data-track-name="how_it_works-link-click"
+                                    data-track-context="footer">
+                                    {{linkText label='Testo del link'}}
+                                </a>
+                            </li>
+                            {{/section}}
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="column copyright">
+                    © 2019 Corpoetica.
+                    <br />
+                    <a href="mailto:info@corpoetica.it">
+                        info@corpoetica.it
+                    </a>
+                    <!-- inizio sezione da rimuovere --> 
+                        <div class="asset-links">
+                        <a href="https://wavesexplorer.com/tx/EdDvbhk4wJ1kL6pMCq1V36GbQE2nGE7Metb87zbaY2JL"
+                            class="asset-link" target="_blank" rel="noopener"
+                            data-track-name="pbt-asset-waves-link-click" data-track-context="footer">
+                            <!-- PBT assets ID Waves -->
+                        </a>
+                        <a href="https://etherscan.io/address/0xF4c07b1865bC326A3c01339492Ca7538FD038Cc0"
+                            class="assets-link" target="_blank" rel="noopener"
+                            data-track-name="pbt-asset-ethereum-link-click" data-track-context="footer">
+                            <!-- PBT ERC20 -->
+                        </a>
+                    </div> 
+                    <!-- fine sezione da rimuovere -->
+                    <div class="site-version-switch-button" data-version="desktop">
+                        <svg class="pb-icon">
+                            <use xlink:href="#icon-md__desktop"></use>
+                        </svg>
+                        Naviga la versione desktop
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../static/libs.desktop.build.js"></script>
+    <script src="../static/locale/en/djangojs.3ad286baf18e.js"></script>
+    <script src="../static/locale/en/en.7f510e5da2fb.js"></script>
+    <script src="../static/primalbase.mobile.build.js"></script>
+</body>
+
+</html>
