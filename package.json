@@ -1,7 +1,6 @@
 {
   "name": "base-corpoetica",
-  "vapid": {
-  },
+  "vapid": {},
   "scripts": {
     "start": "vapid start ."
   },
