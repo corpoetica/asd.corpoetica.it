@@ -28,7 +28,7 @@
 </script>
     <link rel="stylesheet" href="../static/libs.desktop.build.css">
     <link rel="stylesheet" href="../static/primalbase.desktop.build.css">
-    <link rel="stylesheet" href="../static/corpoetica.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/site.css">
     <script src="../static/head.desktop.build.js"></script>
 
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXX-2"></script> -->
@@ -296,7 +296,7 @@ style__default
                 </section>
                 <section class="homepage-tour-request">
                     {{#section homeContattaci sortable=true label="Home: contattaci"}}
-                    <div class="container" {{#if sfondo}} style="background-image: url('{{sfondo type=image width=414 height=288 tag=false required=false}}');" {{/if}}>
+                    <div class="container" {{#if sfondo}} style="background-image: url('{{sfondo type=image width=414 height=288 tag=false required=false}}'); background-repeat: no-repeat; width: 414px; height: 288px;" {{/if}}>
                         <div class="text">
                             <h2 class="heading-5">
                                 {{titolone}}
