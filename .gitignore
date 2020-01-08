@@ -1,6 +1,8 @@
 .DS_Store
 .env
-data
+# data
 node_modules
 package-lock.json
 pm2.json
+
+dist
