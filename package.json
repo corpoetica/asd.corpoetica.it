@@ -2,9 +2,10 @@
   "name": "base-corpoetica",
   "vapid": {},
   "scripts": {
-    "start": "vapid start ."
+    "start": "vapid start .",
+    "build": "vapid build ."
   },
   "dependencies": {
-    "@vapid/cli": "^0.8.6"
+    "@vapid/cli": "^0.9.3"
   }
 }
