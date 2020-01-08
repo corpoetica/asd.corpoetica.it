@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <title>
-        Assciuuntaaa - Corpoetica - {{titolone type=html}}
+        Corpoetica - {{titolone type=html}}
     </title>
     <meta name="viewport" content="width=375, user-scalable=no">
     <meta name="description"
@@ -241,46 +241,7 @@ style__default
                     {{button}}
                 </a>
                 {{/section}}
-                <section class="homepage-solutions">
-                    {{#section tab sortable=true label="Home: titolo schede"}}
-                    <h2 class="heading-5">
-                        {{titolone}}
-                    </h2>
-                    {{/section}}
-                    <div class="scroll-area">
-                        <nav class="solutions-tab-bar mdc-tab-bar">
-                            {{#section tabs sortable=true label="Schede: scheda singola"}}
-                            <span class="mdc-tab mdc-tab--active" data-rel="{{scheda placeholder='inserisci una sola parola che funga da link per la navigazione tra le schede'}}">
-                                {{title}}
-                            </span>
-                            {{/section}}
-                            <span class="mdc-tab-bar__indicator"></span>
-                        </nav>
-                    </div>
-                    <div class="solution-block-list">
-                        {{#section tabs sortable=true label="Schede: scheda singola"}}
-                        <div class="solution-block" data-rel="{{scheda}}">
-                            <img src="{{thumb type=image width=326 height=196 tag=false required=false}}" />
-                            <p>
-                                {{description type=html}}
-                            </p>
-                            {{#if linkURL}}
-                            <a href="{{linkURL required=false}}" class="mdc-button">
-                                {{linkText required=false}}
-                            </a>
-                            {{/if}}
-                            {{#if buttonClass}}
-                            <button type="button" class="
-                            {{buttonClass required=false label='classe css dell\'azione che esegue il pulsante'}}
-                            mdc-button
-                            ">
-                                {{buttonText required=false}}
-                            </button>
-                            {{/if}}
-                        </div>
-                        {{/section}}
-                    </div>
-                </section>
+                
                 <section class="homepage-faq">
                     {{#section faq sortable=true label="Home: titolo faq"}}
                     <h2 class="heading-5">
