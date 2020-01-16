@@ -31,6 +31,10 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/site.css">
     <script src="../static/head.mobile.build.js"></script>
 
+    <!-- <script type="text/javascript" src="jquery.min.js"></script> -->
+    
+
+
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXX-2"></script> -->
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -396,6 +400,19 @@ style__default
     <script src="../static/locale/en/djangojs.3ad286baf18e.js"></script>
     <script src="../static/locale/en/en.7f510e5da2fb.js"></script>
     <script src="../static/primalbase.mobile.build.js"></script>
+    <script type="text/javascript" src="/static/restive.min.js"></script>
+    <script type="text/javascript">
+          $(document).ready(function () {
+            if($.restive.isPC())
+                {
+                    $('body').addClass('desktop');
+                }
+                else if ($.restive.isMobile())
+                {
+                    $('body').addClass('mobile');
+                }
+          });
+    </script>
 </body>
 
 </html>
