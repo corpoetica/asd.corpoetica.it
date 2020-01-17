@@ -36,6 +36,22 @@ span.titolone-alto {
 }
 
 .desktop {
+    .pb-header .header-content {
+        height: 96px;
+        margin-bottom: 1rem;
+    }
+    .pb-logo img.logo-img {
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url(https://corpoeticadotblog.files.wordpress.com/2018/11/corpoetica-logo2.png?w=96) no-repeat;
+        width: 96px; /* Width of new image */
+        height: 60px; /* Height of new image */
+        padding-left: 96px; /* Equal to width of new image */
+    }
+    .titolone-alto {
+        display: none;
+    }
     .container-wrapper {
         display: flex ;
     }
@@ -44,11 +60,34 @@ span.titolone-alto {
         margin-right: 10px;
     }
     .usp-item {
+        font-size: 1.25rem;
+        p {
+            font-size: 1rem !important;
+        }
         img {
-            width: 552px;
-            height: 377px;
+            max-width: 552px;
+            max-height: 377px;
+            
         }
     }
+    .lead-text {
+        font-size: 1.25rem;
+    }
+    .heading-5 {
+        // display: inline-block;
+        // float: left;
+        // margin-right: 2rem;
+        margin-top: 1rem;
+        p {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            margin-bottom: 0px !important;
+        }
+    }
+    .heading-6 {
+        font-size: 1.2rem !important;
+    }
+        
 }
 .mobile {
     .usp-item {

@@ -52,7 +52,7 @@
     </script>
 </head>
 
-<body class="">
+<body class="checlasseho">
     <div class="pb-page ">
         <div class="cookie-banner pb-hidden">
             <div class="container">
@@ -100,7 +100,7 @@ style__default
                     {{sottotitolo type=html}}
                 </p>
                 <div id="workspaces-list" class="workspaces-list">
-                    
+                    {{> appuntamenti}}
                 </div>
                 <section class="homepage-usp-list">
                     {{#section boxHomeSection sortable=true label="Home: sezione box"}}
@@ -403,14 +403,19 @@ style__default
     <script type="text/javascript" src="/static/restive.min.js"></script>
     <script type="text/javascript">
           $(document).ready(function () {
-            if($.restive.isPC())
-                {
-                    $('body').addClass('desktop');
-                }
-                else if ($.restive.isMobile())
+            if ($.restive.isMobile())
                 {
                     $('body').addClass('mobile');
+                    $('body').removeClass('desktop');
+                    console.log("mobile");
                 }
+                else 
+                // if($.restive.isPC()) 
+                {
+                    $('body').addClass('desktop');
+                    $('body').removeClass('mobile');
+                    console.log("desktop");
+                }; 
           });
     </script>
 </body>
