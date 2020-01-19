@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Quiche Display';
+    src: url('/static/fonts/QuicheDisplay-Thin.woff2') format('woff2'),
+        url('/static/fonts/QuicheDisplay-Thin.woff') format('woff'),
+        url('/static/fonts/QuicheDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quiche Display';
+    src: url('/static/fonts/QuicheDisplay-Thin_1.woff2') format('woff2'),
+        url('/static/fonts/QuicheDisplay-Thin_1.woff') format('woff'),
+        url('/static/fonts/QuicheDisplay-Thin_1.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
 span.titolone-alto {
     padding-left: 7px;
     left:19px;
