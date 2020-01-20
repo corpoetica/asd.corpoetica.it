@@ -120,15 +120,15 @@
       </section>
       <section class="section">
         <div class="container">
-          {{#section homeContattaci sortable=true label="Home: contattaci"}}
+          {{#section homeContattaci sortable=true label="Home: scrivici"}}
           <h2 class="title has-text-centered">{{titolone}}</h2>
           <div class="columns">
             <div class="column is-6">{{#if sfondo}}<img src="{{sfondo type=image width=414 height=288 tag=false required=false}}"  alt=""> {{/if}}</div>
             <div class="column is-6">
-              <form data-netlify="true">
+              <form data-netlify="true" name="Home: scrivici" method="POST" >
                 <div class="field">
                   <div class="control">
-                    <input class="input" type="text" placeholder="Nome">
+                    <input class="input" type="text" name="nome" placeholder="Nome">
                   </div>
                 </div>
                 <div class="field">
@@ -141,12 +141,12 @@
                     </select>
                   </div> -->
                   <div class="control">
-                    <input class="input" type="email" placeholder="Email">
+                    <input class="input" type="email" name="email" placeholder="Email">
                   </div>
                 </div>
                 <div class="field">
                   <div class="control">
-                    <textarea class="textarea" rows="5" placeholder="Scrivi qualcosina.."></textarea>
+                    <textarea class="textarea" rows="5" name="messaggio" placeholder="Scrivi qualcosina.."></textarea>
                   </div>
                 </div>
                 <div class="field">
