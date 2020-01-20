@@ -1,6 +1,3 @@
-
-// @font-face{font-family:Graphik;src:url("/static/img/fonts/graphik-700-bold.c09bde0623a2.woff2") format("woff2"),url("img/fonts/graphik-700-bold.dca38ad2ba2b.woff") format("woff");font-weight:700;font-style:normal;font-display:fallback}
-//@import url(http://webfonts-plus.herokuapp.com/src?family=Graphik);
 @font-face {
     font-family: 'Graphik';
     src: local('Graphik Thin'), local('Graphik-Thin'),
@@ -10,14 +7,11 @@
     font-weight: 100;
     font-style: normal;
   }
-
 @font-face{font-family:Basis;src:url("/static/img/fonts/basis-grotesque-pro-regular.5543cb40879c.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-regular.21eafb0cdac9.woff") format("woff");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:BasisMono;src:url("https://asd.corpoetica.it/img/fonts/basis-grotesque-mono-pro.480bc779f619.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-mono-pro.d675dcf1adb3.woff") format("woff");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:Basis;src:url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-medium.e40fc9375acb.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-medium.8ebb2f06c3d9.woff") format("woff");font-weight:500;font-style:normal;font-display:fallback}@font-face{font-family:Basis;src:url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-bold.650934577b4d.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-bold.b253580aab68.woff") format("woff");font-weight:700;font-style:normal;font-display:fallback}@font-face{font-family:Basis;src:url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-black.02ce71b70d9b.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-black.84be61f746c1.woff") format("woff");font-weight:900;font-style:normal;font-display:fallback}
 .navbar-item img {
       height: 100%;
       width: auto;
 }
-
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-LightItalic.woff2') format('woff2'),
@@ -26,7 +20,6 @@
     font-weight: 300;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-MediumItalic.woff2') format('woff2'),
@@ -35,7 +28,6 @@
     font-weight: 500;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-ThinItalic.woff2') format('woff2'),
@@ -44,7 +36,6 @@
     font-weight: 100;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Medium.woff2') format('woff2'),
@@ -53,7 +44,6 @@
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-BlackItalic.woff2') format('woff2'),
@@ -62,7 +52,6 @@
     font-weight: 900;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Bold.woff2') format('woff2'),
@@ -71,7 +60,6 @@
     font-weight: bold;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-BoldItalic.woff2') format('woff2'),
@@ -80,7 +68,6 @@
     font-weight: bold;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-ExtraBold.woff2') format('woff2'),
@@ -89,7 +76,6 @@
     font-weight: 800;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Italic.woff2') format('woff2'),
@@ -98,7 +84,6 @@
     font-weight: normal;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-ExtraBoldItalic.woff2') format('woff2'),
@@ -107,7 +92,6 @@
     font-weight: 800;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Black.woff2') format('woff2'),
@@ -116,7 +100,6 @@
     font-weight: 900;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Regular.woff2') format('woff2'),
@@ -125,7 +108,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Light.woff2') format('woff2'),
@@ -134,7 +116,6 @@
     font-weight: 300;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Thin.woff2') format('woff2'),
@@ -143,7 +124,6 @@
     font-weight: 100;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-ThinItalic_1.woff2') format('woff2'),
@@ -152,7 +132,6 @@
     font-weight: 100;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Black_1.woff2') format('woff2'),
@@ -161,7 +140,6 @@
     font-weight: 900;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-BoldItalic_1.woff2') format('woff2'),
@@ -170,7 +148,6 @@
     font-weight: bold;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Light_1.woff2') format('woff2'),
@@ -179,7 +156,6 @@
     font-weight: 300;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-MediumItalic_1.woff2') format('woff2'),
@@ -188,7 +164,6 @@
     font-weight: 500;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Medium_1.woff2') format('woff2'),
@@ -197,7 +172,6 @@
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-ExtraBoldItalic_1.woff2') format('woff2'),
@@ -206,7 +180,6 @@
     font-weight: 800;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Regular_1.woff2') format('woff2'),
@@ -215,7 +188,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-LightItalic_1.woff2') format('woff2'),
@@ -224,7 +196,6 @@
     font-weight: 300;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Bold_1.woff2') format('woff2'),
@@ -233,7 +204,6 @@
     font-weight: bold;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-BlackItalic_1.woff2') format('woff2'),
@@ -242,7 +212,6 @@
     font-weight: 900;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-ExtraBold_1.woff2') format('woff2'),
@@ -251,7 +220,6 @@
     font-weight: 800;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Italic_1.woff2') format('woff2'),
@@ -260,7 +228,6 @@
     font-weight: normal;
     font-style: italic;
 }
-
 @font-face {
     font-family: 'Quiche Display';
     src: url('/static/fonts/QuicheDisplay-Thin_1.woff2') format('woff2'),
@@ -269,15 +236,9 @@
     font-weight: 100;
     font-style: normal;
 }
-
-
-/*! Theme created with the Bulma Builder (https://bulma.dev) */
-
 @import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
 @import "../../node_modules/bulma/sass/utilities/functions.sass";
 @import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
-
-// Your variables
 $primary: #FF9800;
 $grey-dark: hsl(0, 0%, 29%);
 $cyan: hsl(204, 86%, 53%);
@@ -316,14 +277,10 @@ $size-2: 2.5rem;
 $size-large: $size-3;
 $border: transparent;
 
-
 $colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "link": ($link, $link-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert)), $custom-colors);
 $shades: mergeColorMaps(("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis), $custom-shades);
 $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7;
 
-
-////////////////////////////////////////////////////////////
-//////////////// MARGIN / PADDING HELPER ///////////////////
 $sizes: (
 	1,
 	2,
@@ -376,8 +333,6 @@ $i: 1;
 	}
 }
 
-// !!important , remove em if you want pal , np :)
-
 @import "../../node_modules/bulma/sass/utilities/_all.sass";
 @import "../../node_modules/bulma/sass/base/_all.sass";
 @import "../../node_modules/bulma/sass/components/_all.sass";
@@ -386,14 +341,6 @@ $i: 1;
 @import "../../node_modules/bulma/sass/grid/_all.sass";
 @import "../../node_modules/bulma/sass/layout/_all.sass";
 
-// Your styles
-//@import 'custom-styles';
-
-/**
-* 1. This is a valid SCSS file. 
-* 2. You can use CSS and SCSS here. 
-* 3. Custom CSS must be manualy saved.
-**/
 .your-class {}
 .shadow-header {
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
@@ -445,19 +392,6 @@ $i: 1;
     font-size: small;
     display: block;
 }
-/*
-.chisiamo {
-    .block {
-        max-width: 70%;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .media-content {
-        padding: 0.75rem 4rem 1.5rem 0.75rem;
-    }
-}
-*/
 
 span.titolone-alto {
     padding-left: 7px;
