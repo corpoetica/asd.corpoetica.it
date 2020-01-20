@@ -6,6 +6,8 @@
     "build": "vapid build ."
   },
   "dependencies": {
-    "@vapid/cli": "^0.9.3"
+    "@vapid/cli": "^0.9.3",
+    "bulma": "^0.8.0",
+    "bulma-carousel": "^4.0.4"
   }
 }
