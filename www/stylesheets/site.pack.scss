@@ -7,6 +7,15 @@
     font-weight: 100;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Graphik';
+    src: url('/static/fonts/Graphik-Regular.eot');
+    src: url('/static/fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/static/fonts/Graphik-Regular.woff2') format('woff2'),
+        url('/static/fonts/Graphik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face{font-family:Basis;src:url("/static/img/fonts/basis-grotesque-pro-regular.5543cb40879c.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-regular.21eafb0cdac9.woff") format("woff");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:BasisMono;src:url("https://asd.corpoetica.it/img/fonts/basis-grotesque-mono-pro.480bc779f619.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-mono-pro.d675dcf1adb3.woff") format("woff");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:Basis;src:url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-medium.e40fc9375acb.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-medium.8ebb2f06c3d9.woff") format("woff");font-weight:500;font-style:normal;font-display:fallback}@font-face{font-family:Basis;src:url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-bold.650934577b4d.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-bold.b253580aab68.woff") format("woff");font-weight:700;font-style:normal;font-display:fallback}@font-face{font-family:Basis;src:url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-black.02ce71b70d9b.woff2") format("woff2"),url("https://asd.corpoetica.it/img/fonts/basis-grotesque-pro-black.84be61f746c1.woff") format("woff");font-weight:900;font-style:normal;font-display:fallback}
 .navbar-item img {
       height: 100%;
