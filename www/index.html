@@ -1,8 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
-  <head>
-    <title>Corpoetica</title>
-    <meta name="description" content="CorPoetica​​ opera per la diffusione, lo studio e la pratica delle discipline legate al movimento e al corpo intesi come punto di partenza per la propria crescita personale. Essa sostiene e promuove lo sviluppo di un intelligenza corporea che si integri ad un utilizzo più consapevole dei processi cognitivi.">
+<html lang="en" class="action_home" data-action="home" data-action-type="public">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Corpoetica - {{titolone type=html}}
+    </title>
+    <meta name="viewport" content="width=375, user-scalable=no">
+    <meta name="description"
+        content="{{sottotitolo}}">
+    <meta property="og:title" content="Corpoetica - {{titolone type=html}}">
+    <meta property="og:description"
+        content="{{sottotitolo}}">
     {{> head}}
   </head>
   <body>
@@ -11,7 +22,7 @@
       <section class="hero">
         <div class="hero-body">
           <div class="container has-text-left">
-            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">{{titolone type=html}}</h1>
+            <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile has-margin-top-3">{{titolone type=html}}</h1>
             <h2 class="subtitle home-sottotitolo is-size-5-desktop is-size-6-mobile">{{sottotitolo type=html}}</h2>
             <!-- <div class="buttons is-centered"><a class="control button is-primary" href="#">Sign up for free</a><a class="control button is-light" href="#">Read more</a></div> -->
           </div>
@@ -20,7 +31,7 @@
       <section class="section has-padding-top-0">
         <div class="container">
           <!-- <h2 class="title has-text-centered">The Pied Piper Blog</h2> -->
-          <div class="columns is-multiline appuntamenti">
+          <div id="corsieseminari" class="columns is-multiline appuntamenti">
             {{#section appuntamenti multiple=true sortable=true label="Corsi e seminari"}}
             <!-- <div class="column is-6-tablet is-3-desktop"> -->
             <div class="column is-6-tablet is-4-desktop">
@@ -52,7 +63,7 @@
             {{/section}}
             <div class="column is-6-tablet is-4-desktop">
               <div class="card" style="height: 100%">
-                <div class="card-image has-padding-left-7"><a href="/newsletter.html"><img src="https://corpoeticadotblog.files.wordpress.com/2018/10/acquarelli-png-page-003.jpg?w=296" alt=""></a></div>
+                <div class="card-image has-padding-left-7"><a href="/newsletter.html"><img src="https://corpoeticadotblog.files.wordpress.com/2018/10/acquarelli-png-page-003.jpg?w=596" alt=""></a></div>
                 <div class="card-content">
                   <div class="block">
                     <small class="is-size-7  is-family-monospace	is-uppercase">
@@ -69,7 +80,7 @@
                     </div>
                   <h5 class="title is-size-6-mobile is-size-5-desktop"><a href="/contatti.html">Altri appuntamenti</a></h5>
                   <div class="is-size-6 has-margin-bottom-7 is-family-secondary">Questo è solo l'inizio! Iscriviti alla nostra newsletter per ricevere gli aggiornamenti.</div>
-                  <a href="/newsletter.html" class="button is-outlined is-primary is-small mdc-button mdc-button--raised "
+                  <a href="./#scrivici" class="button is-outlined is-primary is-small mdc-button mdc-button--raised "
                   data-track-name="workspace-card-book-button-click">
                     Resta in movimento
                   </a>
@@ -103,12 +114,16 @@
             <div class="card block">
               <div class="card-content">
                 <div class="media">
-                  <div class="media-left">
+                  <div class="media-left is-hidden-mobile">
                     <figure class="image is-64x64"><img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=FF9800" alt=""></figure>
                   </div>
                   <div class="media-content">
                     <h3 class="title is-4">{{title}}</h3>
-                    <div>{{description type=html}}</div>
+                    <div class="columns ">
+                      <div class="column is-half-desktop is-two-thirds-tablet">
+                        <div class="">{{description type=html}}</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -121,9 +136,9 @@
       <section class="section">
         <div class="container">
           {{#section homeContattaci sortable=true label="Home: scrivici"}}
-          <h2 class="title has-text-centered">{{titolone}}</h2>
+          <h2 id="scrivici" class="title has-text-centered">{{titolone}}</h2>
           <div class="columns">
-            <div class="column is-6">{{#if sfondo}}<img src="{{sfondo type=image width=414 height=288 tag=false required=false}}"  alt=""> {{/if}}</div>
+            <div class="column is-6">{{#if sfondo}}<img class="shadow-box" src="{{sfondo type=image width=414 height=288 tag=false required=false}}"  alt=""> {{/if}}</div>
             <div class="column is-6">
               <form data-netlify="true" name="Corpoetica.it - Home - Scrivici" method="POST" >
                 <div class="field">

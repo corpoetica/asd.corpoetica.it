@@ -1,32 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-navbar-fixed-top">
   <head>
-    <title>Page title</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
-    <link rel="stylesheet" href="css/bulma/bulma-theme.css">
-    <link rel="icon" href="favicon.ico">
+    <title>Corpoetica</title>
+    <meta name="description" content="CorPoetica​​ opera per la diffusione, lo studio e la pratica delle discipline legate al movimento e al corpo intesi come punto di partenza per la propria crescita personale. Essa sostiene e promuove lo sviluppo di un intelligenza corporea che si integri ad un utilizzo più consapevole dei processi cognitivi.">
+    {{> head}}
   </head>
   <body>
     <div class="container is-fluid">
-      <nav class="navbar">
-        <div class="container">
-          <div class="navbar-brand is-active"><a class="navbar-item" href="#">Pied Piper</a><a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
-          <div class="navbar-menu">
-            <div class="navbar-end"><a class="navbar-item" href="#">Features</a><a class="navbar-item" href="#">Enterprise</a><a class="navbar-item" href="#">Support</a>
-              <div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link">ICO</a>
-                <div class="navbar-dropdown"><a class="navbar-item navbar-item-dropdown" href="#">Whitepaper</a><a class="navbar-item navbar-item-dropdown" href="#">Token</a></div>
-              </div>
-            </div>
-            <div>
-              <div class="navbar-item"><a class="button is-primary" href="#">Sign up</a></div>
-            </div>
-          </div>
-        </div>
-      </nav>
+      {{> menu-bulma}}
       <section class="section">
         <div class="container">
           <h2 class="title has-text-centered">Contact the Pied Piper team</h2>
@@ -97,7 +78,8 @@
             </div>
           </div>
         </div>
-      </footer>
-    </div>
-  </body>
-</html>
+        {{> footer}}
+      </div>
+      {{> foot}}
+    </body>
+  </html>

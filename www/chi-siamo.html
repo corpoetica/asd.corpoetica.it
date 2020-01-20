@@ -5,17 +5,18 @@
     <meta name="description" content="CorPoetica​​ opera per la diffusione, lo studio e la pratica delle discipline legate al movimento e al corpo intesi come punto di partenza per la propria crescita personale. Essa sostiene e promuove lo sviluppo di un intelligenza corporea che si integri ad un utilizzo più consapevole dei processi cognitivi.">
     {{> head}}
   </head>
-  <body>
+  <body class="chisiamo">
     <div class="container is-fluid">
       {{> menu-bulma}}
       <section class="hero">
         <div class="hero-body">
           <div class="container">
             <div class="columns is-vcentered">
+              {{#section chiSiamo sortable=true label="Chi siamo: intro"}}
               <div class="column is-6">
-                <h1 class="title is-spaced">The New Internet</h1>
-                <p class="subtitle">We've built a decentralized internet where information is totally free in every sense of the word.</p>
-                <form>
+                <h1 class="title is-spaced">{{titolo label="Titolo pagina Chi siamo"}}</h1>
+                <p class="subtitle">{{sottotitolo label="Sottotitolo pagina Chi siamo"}}</p>
+                <!-- <form>
                   <div class="field has-addons">
                     <div class="control">
                       <input class="input" type="text" placeholder="Your e-mail">
@@ -32,166 +33,98 @@
                       </div>
                     </label>
                   </div>
-                </form>
+                </form> -->
               </div>
-              <div class="column is-6"><img src="https://bulma.dev/placeholder/pictures/bg_4-3.svg?primary=FF9800" alt=""></div>
+              <div class="column is-6"><img class="shadow-box" src="{{copertina type=image width=414 height=288 tag=false required=false label='Copertina pagina Chi siamo'}}"  alt=""></div>
+              {{/section}}
             </div>
           </div>
         </div>
       </section>
       <section class="section">
         <div class="container has-text-centered">
-          <h2 class="title">The Pipers</h2>
-          <p class="subtitle">We are the guys that made this whole thing possible</p>
+          <!-- <h2 class="title">Corpoetica</h2> -->
+          <!-- <p class="subtitle">Ci unisce </p> -->
           <div class="columns">
-            <div class="column is-4">
+            {{#section minibio multiple=true sortable=true label='Chi siamo: singole bio'}}
+            <div class="column ">
               <div class="level">
                 <div class="level-item">
-                  <figure class="image is-128x128"><img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=FF9800" alt=""></figure>
+                  <figure class="image is-128x128"><img class="is-rounded shadow-box" src="{{fotina type=image width=128 height=128 tag=false required=false label='Fotina per Bio'}}" alt=""></figure>
                 </div>
               </div>
-              <h5 class="title is-5">Richard Hendricks</h5>
-              <p class="subtitle is-6">CEO</p>
-              <p>When I'm not obsessively stressing about the fate of Pied Piper, I sometimes give lectures to school kids. Spend most of my time coding.</p>
+              <h5 class="title is-5">{{nomeBio label="Nome o Titolo Bio"}}</h5>
+              <p class="subtitle is-6">{{ruoloBio label="Ruolo o altro come sottotitolo Bio"}}</p>
+              <!-- <div class="is-size-7">{{miniBio type="html" label="Testo Bio"}}</div> -->
             </div>
-            <div class="column is-4">
-              <div class="level">
-                <div class="level-item">
-                  <figure class="image is-128x128"><img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=FF9800" alt=""></figure>
-                </div>
-              </div>
-              <h5 class="title is-5">Dinesh Chugtai</h5>
-              <p class="subtitle is-6">CTO</p>
-              <p>I am the absolute best programmer at Pied Piper (especially better than Gilfoyle). My genius shines and guides the Pied Piper team.</p>
-            </div>
-            <div class="column is-4">
-              <div class="level">
-                <div class="level-item">
-                  <figure class="image is-128x128"><img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=FF9800" alt=""></figure>
-                </div>
-              </div>
-              <h5 class="title is-5">Bertram Gilfoyle</h5>
-              <p class="subtitle is-6">Chief Systems Architect</p>
-              <p>I work on Pied Piper only for the advanced technology. I don't really like most people I work with, but they need me to put out their fires, so&nbsp;I&nbsp;stay. </p>
-            </div>
+            {{/section}}
           </div>
+          <!-- <a class="button is-small" href="#bio">Leggi le bio</a> -->
+          <div class="buttons is-centered"><a class="button is-primary is-small" href="#bio">Leggi le bio</a></div>  
         </div>
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="title has-text-centered">Frequently Asked Questions</h2>
+          {{#section storia label="Home: titolo cards"}}
+          <h2 class="title has-text-centered">{{titolone}}</h2>
+          {{/section}}
           <div class="block">
+            {{#section cards multiple=true sortable=true label='Cards: singola card'}}
             <div class="card block">
               <div class="card-content">
                 <div class="media is-inline-mobile is-flex-tablet ">
                   <div class="media-left">
-                    <figure class="image is-64x64"><img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=FF9800" alt=""></figure>
+                    <figure class="image is-64x64"><img class="is-rounded" src="{{circolino type=image tag=false required=false width=44 height=44 label='Immaginetta a cerchio'}}" alt=""></figure>
                   </div>
                   <div class="media-content">
-                    <h3 class="title is-4">How is a decentralized network different from the traditional web?</h3>
-                    <p>Decentralization is a key aspect of PiperNet. Traditionally, to access data on a website, you needed to connect to a single server containing that data. This method of storing data makes it easy for third parties to get access to it, corrupt it or even delete it. In PiperNet it is securely stored on multiple devices in the network, which makes it harder to hack and interfere with your data.</p>
+                      {{#if titolo}}
+                      <h3 class="title is-4">{{titolo required=false}}</h3>
+                      {{/if}}
+                    <!-- {{#if datacardText}}
+                    <span class="pb-date-text" data-date="{{datacard type=date format='%Y-%m-%d' required=false tag=false}}" data-skeleton="yMMMd">
+                        {{datacardText required=false label="Parola chiave oppure Testo al posto della data"}}
+                    </span>
+                    {{/if}} 
+                    {{#if intro}}
+                        <span>&middot;</span>
+                        {{intro label="Altra parola chiave (seprata da un puntino)" required=false}}
+                    {{/if}} 
+                    {{#if link}}
+                        <span>&middot;</span>
+                        <a href="{{link required=false type=link}}" rel="noopener" class="mdc-card__primary-action">
+                            {{linkText label="Testo del link" required=false}}
+                        </a>
+                    {{/if}} -->
+                    <p>{{description type=html}}</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card block">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64"><img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=FF9800" alt=""></figure>
-                  </div>
-                  <div class="media-content">
-                    <h3 class="title is-4">Why shouldn't I just store my data on a Hooli Box?</h3>
-                    <p>That's just the thing - if you store your data in a single place, like Gavin Belsons' poorly-made server box, your data will very susceptible to hacking. Whereas on PiperNet, your data is safe with many copies to back it up from.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card block">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64"><img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=FF9800" alt=""></figure>
-                  </div>
-                  <div class="media-content">
-                    <h3 class="title is-4">What makes PiperNet so safe?</h3>
-                    <p>Our proprietary middle-out compression algorithm allows data to flow so fast that it can't be hacked! But, in all seriousness, the algorithm helps but it's the public, immutable ledger that makes it secure. This enables PiperNet users to exchange data without risk of it being intercepted by third parties.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card block">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image is-64x64"><img class="is-rounded" src="https://bulma.dev/placeholder/pictures/bg_circle.svg?primary=FF9800" alt=""></figure>
-                  </div>
-                  <div class="media-content">
-                    <h3 class="title is-4">How long does it take to get a company up and running on PiperNet?</h3>
-                    <p>Access to the public network is granted within a day, but moving all your data and integrating your existing software depends on how big your company is. Startups can expect to be fully online within a week, enterprises can take up to a month due to large reliance on legacy systems and huge datasets.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="buttons is-centered"><a class="button is-primary" href="#">See all</a></div>
+            {{/section}}
+            <hr>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
-          <h2 class="title has-text-centered">Contact the Pied Piper team</h2>
-          <div class="columns">
-            <div class="column is-6"><img src="https://bulma.dev/placeholder/pictures/bg_16-9.svg?primary=FF9800" alt=""></div>
-            <div class="column is-6">
-              <form>
-                <div class="field">
-                  <div class="control">
-                    <input class="input" type="email" placeholder="Email">
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="select is-fullwidth">
-                    <select>
-                      <option disabled selected>Select product</option>
-                      <option>Product 1</option>
-                      <option>Product 2</option>
-                      <option>Product 3</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="control">
-                    <textarea class="textarea" rows="5" placeholder="Write something..."></textarea>
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="control">
-                    <button class="button is-primary is-fullwidth" type="submit">Submit</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container has-text-centered">
-          <div class="columns is-vcentered">
-            <div class="column is-3-tablet is-2-desktop">
-              <h4 class="title is-4">Thousands of happy companies</h4>
-            </div>
-            <div class="column is-9-tablet is-10-desktop">
-              <div class="columns">
-                <div class="column"><img src="https://bulma.dev/placeholder/logos/gitscape.svg?primary=FF9800" alt=""></div>
-                <div class="column"><img src="https://bulma.dev/placeholder/logos/k-hole.svg?primary=FF9800" alt=""></div>
-                <div class="column"><img src="https://bulma.dev/placeholder/logos/tholio.svg?primary=FF9800" alt=""></div>
-                <div class="column"><img src="https://bulma.dev/placeholder/logos/plucky.svg?primary=FF9800" alt=""></div>
-                <div class="column"><img src="https://bulma.dev/placeholder/logos/1stsight.svg?primary=FF9800" alt=""></div>
+      <section>
+      <div id="bio" class="container">
+        <h3 class="title has-text-centered">Le nostre bio</h3>
+        {{#section minibio multiple=true sortable=true label='Chi siamo: singole bio'}}
+        <div class="card block">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left is-pulled-left-mobile">
+                <figure class="image is-64x64"><img class="is-rounded" src="{{fotina type=image width=128 height=128 tag=false required=false label='Fotina per Bio'}}" alt=""></figure>
+              </div>
+              <div class="media-content">
+                <h3 class="title is-4">{{nomeBio label="Nome o Titolo Bio"}}</h3>
+                <div class="is-size-6 is-family-secondary">{{miniBio type="html" label="Testo Bio"}}</div>
               </div>
             </div>
           </div>
         </div>
+        {{/section}}
+      </div>
       </section>
+      
       {{> footer}}
     </div>
     {{> foot}}

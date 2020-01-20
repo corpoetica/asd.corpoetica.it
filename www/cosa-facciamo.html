@@ -8,58 +8,47 @@
   <body>
     <div class="container is-fluid">
       {{> menu-bulma}}
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container has-text-left">
+            {{#section cosaFacciamoIntro sortable=true label="Cosa facciamo: intro"}}
+            <!-- <h1 class="title is-spaced is-size-3-desktop is-size-4-mobile">{{titoloPagina label="Titolo della Pagina"}}</h1>
+            <h2 class="subtitle home-sottotitolo is-size-5-desktop is-size-6-mobile">{{sottotitoloPagina label="Sottotitolo della Pagina"}}</h2> -->
+            <h1 class="title is-spaced">{{titoloPagina label="Titolo della Pagina"}}</h1>
+                <p class="subtitle">{{sottotitoloPagina label="Sottotitolo della Pagina"}}</p>
+            <!-- <div class="buttons is-centered"><a class="control button is-primary" href="#">Sign up for free</a><a class="control button is-light" href="#">Read more</a></div> -->
+            <!-- <div class="buttons"><a class="button is-primary" href="{{linkBottonePagina label='link bottone principale'}}">{{bottonePagina label="Testo bottone principale"}}</a></div> -->
+            {{/section}}
+          </div>
+        </div>
+      </section>
       <section class="section">
         <div class="container">
-          <div class="columns">
-            <div class="column is-4">
-              <h2 class="title">What's So Great About PiperNet?</h2>
-              <p class="subtitle">We don't really like being called the Pipers, but Richard thought of this name and won't let us change it. Anyways, we are the guys that made this whole thing possible.</p>
-              <div class="buttons"><a class="button is-primary" href="#">Join us!</a></div>
-            </div>
-            <div class="column is-8 has-text-centered">
-              <div class="columns is-multiline">
-                <div class="column is-6">
-                  <div class="card">
-                    <div class="card-content"><img src="placeholder/icons/quote-left.svg" alt="">
-                      <p class="block">This is such a great product that I feel aroused every time I use it. I didn't know the boys would be able to build, but god damn it, they did it. Kickass!</p>
-                      <h5 class="title is-5">Russ Hanneman</h5>
-                      <p class="subtitle">Investor, Angel, Great Guy</p>
-                    </div>
+            <div class="columns">  
+              <div class="is-fullwidth has-text-centered">
+                <div class="columns is-multiline">
+                  {{#section cosaFacciamo multiple=true sortable=true label="Cosa facciamo: schede"}}
+                  <div class="column is-6">
+                    <div class="card">
+                      <div class="card-content">
+                        <!-- <img src="placeholder/icons/quote-left.svg" alt=""> -->
+                        <h5 class="title is-5">{{titolo}}</h5>
+                        <p class="subtitle">{{sottotitolo}}</p>
+                        <hr>
+                        <p class="block">{{descrizione type=html}}</p>
+                        
+                      </div>
+                    </div>                
                   </div>
-                </div>
-                <div class="column is-6">
-                  <div class="card">
-                    <div class="card-content"><img src="placeholder/icons/quote-left.svg" alt="">
-                      <p class="block">Man, that's it! I forgot about problems with data storage, and I said "f**k you" to the hegemonic web industry. Pipe'n'roll baby!</p>
-                      <h5 class="title is-5">Kurt P. Benton</h5>
-                      <p class="subtitle">Developer</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="column is-6">
-                  <div class="card">
-                    <div class="card-content"><img src="placeholder/icons/quote-left.svg" alt="">
-                      <p class="block">Even though I have been dismantled, I live on as an artificial intelligence on the PiperNet. I really like it here. Still waiting for Jared to Piper-chat with me sometime.</p>
-                      <h5 class="title is-5">Fiona</h5>
-                      <p class="subtitle">Artificial Intelligence</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="column is-6">
-                  <div class="card">
-                    <div class="card-content"><img src="placeholder/icons/quote-left.svg" alt="">
-                      <p class="block">It's a really cool network. Like, we had a fight with Richard at one point, and I think they deleted some of my data, but then they brought it back. Just bro's being bro's. Respected!</p>
-                      <h5 class="title is-5">Colin</h5>
-                      <p class="subtitle">CEO at K-Hole              </p>
-                    </div>
-                  </div>
+                  {{/section}}
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
       </section>
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <div class="columns is-vcentered">
             <div class="column is-6">
@@ -84,7 +73,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       {{> footer}}
     </div>
     {{> foot}}

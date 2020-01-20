@@ -398,6 +398,9 @@ $i: 1;
 .shadow-header {
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 }
+.shadow-box {
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02)
+}
 .image img {
     max-width: max-content;
 }
@@ -432,7 +435,29 @@ $i: 1;
         font-size: small;
     }
 }
-
+.date, .where {
+    line-height: 1rem;
+}
+.date {
+    display: block;
+}
+.where {
+    font-size: small;
+    display: block;
+}
+/*
+.chisiamo {
+    .block {
+        max-width: 70%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .media-content {
+        padding: 0.75rem 4rem 1.5rem 0.75rem;
+    }
+}
+*/
 
 span.titolone-alto {
     padding-left: 7px;
