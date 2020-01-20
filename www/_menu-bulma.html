@@ -1,0 +1,39 @@
+<nav class="navbar is-fixed-top ">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item logo is-hidden-touch" href="/">
+          <div class="media-left is-vcentered"><figure class="image is-46x46"><img class="is-rounded" src="https://corpoeticadotblog.files.wordpress.com/2018/11/cropped-corpoetica-logo3-e1543246501588.png?w=46" alt=""></figure></div>
+          <h1 class="is-size-4">Corpoetica</h1>
+        </a>
+        <a class="navbar-item logo is-hidden-desktop" href="/">
+            <div class="media-left is-vcentered"><figure class="image is-32x32"><img class="is-rounded" src="https://corpoeticadotblog.files.wordpress.com/2018/11/cropped-corpoetica-logo3-e1543246501588.png?w=32" alt=""></figure></div>
+            <h1 class="is-size-6">Corpoetica</h1>
+        </a>
+          <span class="navbar-burger burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+        <div class="navbar-end">
+            {{#section navs sortable=true label="Menu"}}
+                <!-- <a class="navbar-item is-mobile-5  {{_permalink}}-link-click" href="{{url type=link label='URL della pagina'}}" >{{linkText label='Testo del link'}}</a>     -->
+                <a class="navbar-item has-padding-left-4 " href="{{url type=link label='URL della pagina'}}" >{{linkText label='Testo del link'}}</a>
+            {{/section}}
+          <div class="navbar-item"><a class="button is-primary" href="#">Iscriviti</a></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script type="text/javascript">
+    (function() {
+      var burger = document.querySelector('.burger');
+      var nav = document.querySelector('#'+burger.dataset.target);
+
+      burger.addEventListener('click', function(){
+        burger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+      });
+    })();
+  </script>

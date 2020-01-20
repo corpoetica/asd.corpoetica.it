@@ -1,40 +1,92 @@
-<section class="homepage-solutions">
-    {{#section tab sortable=true label="Home: titolo schede"}}
-    <h2 class="heading-5">
-        {{titolone}}
-    </h2>
-    {{/section}}
-    <div class="scroll-area">
-        <nav class="solutions-tab-bar mdc-tab-bar">
-            {{#section tabs sortable=true label="Schede: scheda singola"}}
-            <span class="mdc-tab mdc-tab--active" data-rel="{{scheda placeholder='inserisci una sola parola che funga da link per la navigazione tra le schede'}}">
-                {{title}}
-            </span>
-            {{/section}}
-            <span class="mdc-tab-bar__indicator"></span>
-        </nav>
-    </div>
-    <div class="solution-block-list">
-        {{#section tabs sortable=true label="Schede: scheda singola"}}
-        <div class="solution-block" data-rel="{{scheda}}">
-            <img src="{{thumb type=image width=326 height=196 tag=false required=false}}" />
-            <p>
-                {{description type=html}}
-            </p>
-            {{#if linkURL}}
-            <a href="{{linkURL required=false}}" class="mdc-button">
-                {{linkText required=false}}
-            </a>
-            {{/if}}
-            {{#if buttonClass}}
-            <button type="button" class="
-            {{buttonClass required=false label='classe css dell\'azione che esegue il pulsante'}}
-            mdc-button
-            ">
-                {{buttonText required=false}}
-            </button>
-            {{/if}}
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    <title>Corpoetica</title>
+    <meta name="description" content="CorPoetica​​ opera per la diffusione, lo studio e la pratica delle discipline legate al movimento e al corpo intesi come punto di partenza per la propria crescita personale. Essa sostiene e promuove lo sviluppo di un intelligenza corporea che si integri ad un utilizzo più consapevole dei processi cognitivi.">
+    {{> head}}
+  </head>
+  <body>
+    <div class="container is-fluid">
+      {{> menu-bulma}}
+      <section class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-4">
+              <h2 class="title">What's So Great About PiperNet?</h2>
+              <p class="subtitle">We don't really like being called the Pipers, but Richard thought of this name and won't let us change it. Anyways, we are the guys that made this whole thing possible.</p>
+              <div class="buttons"><a class="button is-primary" href="#">Join us!</a></div>
+            </div>
+            <div class="column is-8 has-text-centered">
+              <div class="columns is-multiline">
+                <div class="column is-6">
+                  <div class="card">
+                    <div class="card-content"><img src="placeholder/icons/quote-left.svg" alt="">
+                      <p class="block">This is such a great product that I feel aroused every time I use it. I didn't know the boys would be able to build, but god damn it, they did it. Kickass!</p>
+                      <h5 class="title is-5">Russ Hanneman</h5>
+                      <p class="subtitle">Investor, Angel, Great Guy</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-6">
+                  <div class="card">
+                    <div class="card-content"><img src="placeholder/icons/quote-left.svg" alt="">
+                      <p class="block">Man, that's it! I forgot about problems with data storage, and I said "f**k you" to the hegemonic web industry. Pipe'n'roll baby!</p>
+                      <h5 class="title is-5">Kurt P. Benton</h5>
+                      <p class="subtitle">Developer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-6">
+                  <div class="card">
+                    <div class="card-content"><img src="placeholder/icons/quote-left.svg" alt="">
+                      <p class="block">Even though I have been dismantled, I live on as an artificial intelligence on the PiperNet. I really like it here. Still waiting for Jared to Piper-chat with me sometime.</p>
+                      <h5 class="title is-5">Fiona</h5>
+                      <p class="subtitle">Artificial Intelligence</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-6">
+                  <div class="card">
+                    <div class="card-content"><img src="placeholder/icons/quote-left.svg" alt="">
+                      <p class="block">It's a really cool network. Like, we had a fight with Richard at one point, and I think they deleted some of my data, but then they brought it back. Just bro's being bro's. Respected!</p>
+                      <h5 class="title is-5">Colin</h5>
+                      <p class="subtitle">CEO at K-Hole              </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        {{/section}}
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-6">
+              <h2 class="title is-spaced">The New Internet</h2>
+              <p class="subtitle">Our mission is not to outsell Hooli with a product like their latest Box 3. We are not in it for the money - we are in it to make the whole world decentralized.</p>
+            </div>
+            <div class="column is-6">
+              <iframe src="https://www.youtube.com/embed/OtDxDvCpPL4" width="600" height="338" style="height: 338px" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-6">
+              <h2 class="title is-spaced">The New Internet</h2>
+              <p class="subtitle">Our mission is not to outsell Hooli with a product like their latest Box 3. We are not in it for the money - we are in it to make the whole world decentralized.</p>
+            </div>
+            <div class="column is-6">
+              <iframe src="https://www.youtube.com/embed/OtDxDvCpPL4" width="600" height="338" style="height: 338px" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      {{> footer}}
     </div>
-</section>
+    {{> foot}}
+  </body>
+</html>
