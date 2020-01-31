@@ -1,6 +1,8 @@
 {
   "name": "base-corpoetica",
-  "vapid": {},
+  "vapid": {
+    "site": "53ceeeac-0e73-44ad-8a03-97b677f86ac6"
+  },
   "scripts": {
     "start": "vapid start .",
     "build": "vapid build ."
