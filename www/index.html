@@ -6,12 +6,12 @@
 <head>
     <meta charset="utf-8" />
     <title>
-        Corpoetica - {{titolone type=html}}
+        Corpoetica - {{metaTitle type=text}}
     </title>
     <meta name="viewport" content="width=375, user-scalable=no">
     <meta name="description"
         content="{{sottotitolo}}">
-    <meta property="og:title" content="Corpoetica - {{titolone type=html}}">
+    <meta property="og:title" content="Corpoetica - {{metaTitle type=text}}">
     <meta property="og:description"
         content="{{sottotitolo}}">
     {{> head}}
@@ -32,7 +32,7 @@
         <div class="container">
           <!-- <h2 class="title has-text-centered">The Pied Piper Blog</h2> -->
           <div id="corsieseminari" class="columns is-multiline appuntamenti">
-            {{#section appuntamenti multiple=true sortable=true label="Corsi e seminari"}}
+            {{#section appuntamenti multiple=true sortable=false order=date label="Corsi e seminari"}}
             <!-- <div class="column is-6-tablet is-3-desktop"> -->
             <div class="column is-6-tablet is-4-desktop">
               <div class="card" style="height: 100%">
@@ -41,7 +41,7 @@
                   <div class="block">
                     <small class="is-size-7 is-family-monospace	is-uppercase">
                       <strong class="price">
-                        <span class="pb-money" data-value="{{date type=date time=true format='%d-%m-%Y'}}"
+                        <span class="pb-money" data-value="{{date type=date time=true format='%d-%m-%Y' priority=3}}"
                             data-currency="{{date type=date time=true format='%H:%M'}}">
                             {{data label="Data - testo al posto della data" required=false}}
                         </span>
@@ -51,8 +51,8 @@
                       </strong> 
                     </small>
                     </div>
-                  <h5 class="title is-size-6-mobile is-size-5-desktop"><a href="{{_permalink}}">{{title}}</a></h5>
-                  <div class="is-size-6 has-margin-bottom-7 is-family-secondary">{{abstract type=html}}</div>
+                  <h5 class="title is-size-6-mobile is-size-5-desktop"><a href="{{_permalink}}">{{title priority=1}}</a></h5>
+                  <div class="is-size-6 has-margin-bottom-7 is-family-secondary">{{abstract type=html priority=2}}</div>
                   <a href="{{_permalink}}" class="button is-outlined is-primary is-small mdc-button mdc-button--raised "
                   data-track-name="workspace-card-book-button-click">
                     {{button}}
@@ -68,13 +68,13 @@
                   <div class="block">
                     <small class="is-size-7  is-family-monospace	is-uppercase">
                       <strong class="price">
-                        <span class="pb-money" data-value="{{date type=date time=true format='%d-%m-%Y'}}"
-                            data-currency="{{date type=date time=true format='%H:%M'}}">
+                        <span class="pb-money" data-value="date type=date time=true format='%d-%m-%Y'"
+                            data-currency="date type=date time=true format='%H:%M'">
                             aggiornamenti
                         </span>
                       </strong>
                       <strong class="price-approx">
-                        <!-- {{ora label="Orario - testo al posto dell'ora" required=false}} -->
+                        <!-- ora label="Orario - testo al posto dell'ora" required=false -->
                       </strong> 
                     </small>
                     </div>
